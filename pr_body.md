@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 6494070d20ffae18a9558a9b61aa9e99a2803876.
+Automated update to requirements files following changes to `requirements.in` in commit e9ed3ea289b5a584e7e180f62c87bcfc581e1e5f.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -51,7 +51,7 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 platform linux -- Python 3.11.15, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: mock-2.0.0, cov-6.3.0, Faker-37.8.0, anyio-3.7.1
+plugins: mock-2.0.0, anyio-3.7.1, Faker-37.8.0, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
