@@ -146,7 +146,7 @@ beautifulsoup4==4.13.5
 binaryornot==0.4.4
     # via
     #   cookiecutter
-bleach[css]==6.2.0
+bleach[css]==6.3.0
     # via
     #   nbconvert
 blis==1.3.3

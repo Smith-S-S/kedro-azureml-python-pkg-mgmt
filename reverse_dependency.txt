@@ -640,7 +640,7 @@ binaryornot==0.4.4
         └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 
 === bleach ===
-bleach==6.2.0
+bleach==6.3.0
 └── nbconvert==7.17.1 [requires: bleach!=5.0.0]
     └── jupyter_server==2.18.2 [requires: nbconvert>=6.4.4]
         ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
@@ -3597,7 +3597,7 @@ packaging==25.0
 │   └── azure-monitor-opentelemetry==1.8.5 [requires: opentelemetry-instrumentation-flask==0.60b0]
 │       └── azure-ai-ml==1.31.0 [requires: azure-monitor-opentelemetry]
 │           └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
-├── pipdeptree==2.35.2 [requires: packaging>=26]
+├── pipdeptree==2.35.3 [requires: packaging>=26]
 ├── plotly==6.3.0 [requires: packaging]
 │   ├── evidently==0.4.16 [requires: plotly>=5.5.0]
 │   └── kedro-viz==11.1.0 [requires: plotly>=4.0]
@@ -6780,7 +6780,7 @@ webcolors==24.11.1
 
 === webencodings ===
 webencodings==0.5.1
-├── bleach==6.2.0 [requires: webencodings]
+├── bleach==6.3.0 [requires: webencodings]
 │   └── nbconvert==7.17.1 [requires: bleach!=5.0.0]
 │       └── jupyter_server==2.18.2 [requires: nbconvert>=6.4.4]
 │           ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
