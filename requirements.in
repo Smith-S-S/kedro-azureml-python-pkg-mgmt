@@ -184,7 +184,7 @@ plotly==6.3.0
     # Interactive graphing library for Python
 preshed==3.0.9
     # Cython hash table maps (used by spaCy)
-pyarrow==21.0.0
+pyarrow==24.0.0
     # Python library for Apache Arrow (high-performance data memory format)
 pytz==2025.2
     # Brings the Olson tz database into Python
@@ -227,7 +227,7 @@ httptools==0.6.3
     # Fast HTTP parser
 httpx==0.28.1
     # Next-generation HTTP client (sync and async)
-idna==3.11
+idna==3.16
     # Internationalized Domain Names in Applications (IDNA)
 litestar==2.21.1
     # Production-ready ASGI framework (formerly Starlite)
@@ -244,9 +244,9 @@ pysocks==1.7.1
     # SOCKS proxy client
 requests==2.33.0
     # Simple, elegant HTTP library
-starlette==0.50.0
+starlette==1.1.0
     # Lightweight ASGI framework / toolkit
-strawberry-graphql==0.312.3
+strawberry-graphql==0.316.0
     # GraphQL library based on Python dataclasses
 tornado==6.5.5
     # Asynchronous networking library and web server
