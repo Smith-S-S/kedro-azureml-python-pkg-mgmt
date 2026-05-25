@@ -366,6 +366,7 @@ typing-extensions==4.15.0
 typing-inspect==0.9.0
     # Provides tools to inspect type annotations at runtime
     # via evidently
+typing-inspection==0.4.2#comes from the newest pydantic which is a requirement of fastapi following 25/5/2026
 tzdata==2025.2
     # package containing zic-compiled binaries for the IANA time zone database
 
