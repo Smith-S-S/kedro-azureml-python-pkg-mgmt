@@ -211,7 +211,7 @@ aiohttp==3.13.5
     # Asynchronous HTTP client/server framework
 aiosignal==1.4.0
     # List of registered asynchronous signal handlers
-cross-web==0.4.1
+cross-web==0.7.0
     # a universal web framework adapter designed to allow developers to write framework-agnostic code
 dnspython==2.8.0
     # DNS toolkit for Python
