@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 3a0c2356a512783cc8939c31b3af5f0e14f11516.
+Automated update to requirements files following changes to `requirements.in` in commit d5f5f56644126c40910965f34fde18087e0e87bc.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -24,7 +24,7 @@ No orphan candidates found.
 
 ---
 
-## ✅ New / untracked packages
+## ⚠️ New / untracked packages
 
 Packages that pip-compile resolved but that are not listed anywhere in `requirements.in`. Items marked `*** NEW THIS RUN ***` appeared for the first time in this compile. Add them to the appropriate Transitive Libraries section.
 
@@ -32,7 +32,10 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-All resolved packages are already listed in requirements.in.
+1 package(s) resolved by pip-compile are not listed in requirements.in:
+  - typing-inspection
+
+Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
 
 </details>
@@ -58,7 +61,7 @@ tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
 tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports PASSED    [ 66%]
 tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
 
-============================== 3 passed in 0.64s ===============================
+============================== 3 passed in 0.61s ===============================
 ```
 
 </details>

@@ -25,7 +25,7 @@ aiosignal==1.4.0
 
 === annotated-doc ===
 annotated-doc==0.0.4
-└── fastapi==0.128.0 [requires: annotated-doc>=0.0.2]
+└── fastapi==0.136.3 [requires: annotated-doc>=0.0.2]
     ├── kedro_fast_api==0.6.1 [requires: fastapi]
     └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 
@@ -38,7 +38,7 @@ annotated-types==0.7.0
     │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
     │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
     ├── evidently==0.4.16 [requires: pydantic>=1.10.14]
-    ├── fastapi==0.128.0 [requires: pydantic>=2.7.0]
+    ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
     │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
     │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
     ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
@@ -91,8 +91,8 @@ anyio==3.7.1
 │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
 ├── litestar==2.21.1 [requires: anyio>=3]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
-├── starlette==0.50.0 [requires: anyio>=3.6.2,<5]
-│   └── fastapi==0.128.0 [requires: starlette>=0.40.0,<0.51.0]
+├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
+│   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
 │       ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │       └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 ├── watchfiles==0.24.0 [requires: anyio>=3.0.0]
@@ -1157,8 +1157,8 @@ coverage==7.6.4
 └── pytest-cov==6.3.0 [requires: coverage>=7.5]
 
 === cross-web ===
-cross-web==0.4.1
-└── strawberry-graphql==0.312.3 [requires: cross-web>=0.4.0]
+cross-web==0.7.0
+└── strawberry-graphql==0.316.0 [requires: cross-web>=0.6.0]
     └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 
 === cryptography ===
@@ -1307,7 +1307,7 @@ Faker==37.8.0
         └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === fastapi ===
-fastapi==0.128.0
+fastapi==0.136.3
 ├── kedro_fast_api==0.6.1 [requires: fastapi]
 └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 
@@ -1436,7 +1436,7 @@ GitPython==3.1.50
 
 === graphql-core ===
 graphql-core==3.2.6
-└── strawberry-graphql==0.312.3 [requires: graphql-core>=3.2.0,<3.4.0]
+└── strawberry-graphql==0.316.0 [requires: graphql-core>=3.2.0,<3.4.0]
     └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 
 === greenlet ===
@@ -1477,7 +1477,7 @@ httpx==0.28.1
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === idna ===
-idna==3.11
+idna==3.16
 ├── anyio==3.7.1 [requires: idna>=2.8]
 │   ├── httpx==0.28.1 [requires: anyio]
 │   │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
@@ -1501,8 +1501,8 @@ idna==3.11
 │   │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
 │   ├── litestar==2.21.1 [requires: anyio>=3]
 │   │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
-│   ├── starlette==0.50.0 [requires: anyio>=3.6.2,<5]
-│   │   └── fastapi==0.128.0 [requires: starlette>=0.40.0,<0.51.0]
+│   ├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
+│   │   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
 │   │       ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   │       └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 │   ├── watchfiles==0.24.0 [requires: anyio>=3.0.0]
@@ -3609,7 +3609,7 @@ packaging==25.0
 ├── spacy==3.8.2 [requires: packaging>=20.0]
 ├── statsmodels==0.14.4 [requires: packaging>=21.3]
 │   └── evidently==0.4.16 [requires: statsmodels>=0.12.2]
-├── strawberry-graphql==0.312.3 [requires: packaging>=23]
+├── strawberry-graphql==0.316.0 [requires: packaging>=23]
 │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 ├── thinc==8.3.8 [requires: packaging>=20.0]
 │   └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
@@ -3965,7 +3965,7 @@ pure_eval==0.2.3
         └── kedro-viz==11.1.0 [requires: ipython>=7.0.0,<9.0]
 
 === pyarrow ===
-pyarrow==21.0.0
+pyarrow==24.0.0
 └── kedro-azureml==1.0.0 [requires: pyarrow>=11.0.0]
 
 === pycparser ===
@@ -4048,7 +4048,7 @@ pydantic==2.10.6
 │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
 │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 ├── evidently==0.4.16 [requires: pydantic>=1.10.14]
-├── fastapi==0.128.0 [requires: pydantic>=2.7.0]
+├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
 │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
@@ -4068,7 +4068,7 @@ pydantic_core==2.27.2
     │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
     │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
     ├── evidently==0.4.16 [requires: pydantic>=1.10.14]
-    ├── fastapi==0.128.0 [requires: pydantic>=2.7.0]
+    ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
     │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
     │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
     ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
@@ -4271,7 +4271,7 @@ python-dateutil==2.9.0.post0
 │   ├── seaborn==0.13.2 [requires: pandas>=1.2]
 │   └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
 │       └── evidently==0.4.16 [requires: statsmodels>=0.12.2]
-├── strawberry-graphql==0.312.3 [requires: python-dateutil>=2.7]
+├── strawberry-graphql==0.316.0 [requires: python-dateutil>=2.7]
 │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 └── strictyaml==1.7.3 [requires: python-dateutil>=2.6.0]
     └── azure-ai-ml==1.31.0 [requires: strictyaml<2.0.0]
@@ -5221,7 +5221,7 @@ six==1.17.0
 │   │   ├── seaborn==0.13.2 [requires: pandas>=1.2]
 │   │   └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
 │   │       └── evidently==0.4.16 [requires: statsmodels>=0.12.2]
-│   ├── strawberry-graphql==0.312.3 [requires: python-dateutil>=2.7]
+│   ├── strawberry-graphql==0.316.0 [requires: python-dateutil>=2.7]
 │   │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 │   └── strictyaml==1.7.3 [requires: python-dateutil>=2.6.0]
 │       └── azure-ai-ml==1.31.0 [requires: strictyaml<2.0.0]
@@ -5289,8 +5289,8 @@ sniffio==1.3.1
 │   │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
 │   ├── litestar==2.21.1 [requires: anyio>=3]
 │   │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
-│   ├── starlette==0.50.0 [requires: anyio>=3.6.2,<5]
-│   │   └── fastapi==0.128.0 [requires: starlette>=0.40.0,<0.51.0]
+│   ├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
+│   │   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
 │   │       ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   │       └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 │   ├── watchfiles==0.24.0 [requires: anyio>=3.0.0]
@@ -5356,8 +5356,8 @@ stack-data==0.6.3
     └── kedro-viz==11.1.0 [requires: ipython>=7.0.0,<9.0]
 
 === starlette ===
-starlette==0.50.0
-└── fastapi==0.128.0 [requires: starlette>=0.40.0,<0.51.0]
+starlette==1.1.0
+└── fastapi==0.136.3 [requires: starlette>=0.46.0]
     ├── kedro_fast_api==0.6.1 [requires: fastapi]
     └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 
@@ -5366,7 +5366,7 @@ statsmodels==0.14.4
 └── evidently==0.4.16 [requires: statsmodels>=0.12.2]
 
 === strawberry-graphql ===
-strawberry-graphql==0.312.3
+strawberry-graphql==0.316.0
 └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 
 === strictyaml ===
@@ -5998,11 +5998,11 @@ typing_extensions==4.15.0
 │               ├── jupyterlab==4.5.7 [requires: notebook_shim>=0.2]
 │               │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
 │               └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
-├── cross-web==0.4.1 [requires: typing_extensions>=4.14.0]
-│   └── strawberry-graphql==0.312.3 [requires: cross-web>=0.4.0]
+├── cross-web==0.7.0 [requires: typing_extensions>=4.14.0]
+│   └── strawberry-graphql==0.316.0 [requires: cross-web>=0.6.0]
 │       └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 ├── exceptiongroup==1.3.0 [requires: typing_extensions>=4.6.0]
-├── fastapi==0.128.0 [requires: typing_extensions>=4.8.0]
+├── fastapi==0.136.3 [requires: typing_extensions>=4.8.0]
 │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 ├── ipython==8.37.0 [requires: typing_extensions>=4.6]
@@ -6368,7 +6368,7 @@ typing_extensions==4.15.0
 │   │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
 │   │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 │   ├── evidently==0.4.16 [requires: pydantic>=1.10.14]
-│   ├── fastapi==0.128.0 [requires: pydantic>=2.7.0]
+│   ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
 │   │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 │   ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
@@ -6386,7 +6386,7 @@ typing_extensions==4.15.0
 │       │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
 │       │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 │       ├── evidently==0.4.16 [requires: pydantic>=1.10.14]
-│       ├── fastapi==0.128.0 [requires: pydantic>=2.7.0]
+│       ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
 │       │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │       │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 │       ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
@@ -6571,11 +6571,11 @@ typing_extensions==4.15.0
 │               └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
 ├── SQLAlchemy==2.0.44 [requires: typing_extensions>=4.6.0]
 │   └── kedro-viz==11.1.0 [requires: SQLAlchemy>=1.4,<3]
-├── starlette==0.50.0 [requires: typing_extensions>=4.10.0]
-│   └── fastapi==0.128.0 [requires: starlette>=0.40.0,<0.51.0]
+├── starlette==1.1.0 [requires: typing_extensions>=4.10.0]
+│   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
 │       ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │       └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
-├── strawberry-graphql==0.312.3 [requires: typing_extensions>=4.5.0]
+├── strawberry-graphql==0.316.0 [requires: typing_extensions>=4.5.0]
 │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 ├── typer==0.12.5 [requires: typing_extensions>=3.7.4.3]
 │   ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -6583,12 +6583,22 @@ typing_extensions==4.15.0
 │   ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
 │   └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
 │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
-└── typing-inspect==0.9.0 [requires: typing_extensions>=3.7.4]
-    └── evidently==0.4.16 [requires: typing-inspect>=0.9.0]
+├── typing-inspect==0.9.0 [requires: typing_extensions>=3.7.4]
+│   └── evidently==0.4.16 [requires: typing-inspect>=0.9.0]
+└── typing-inspection==0.4.2 [requires: typing_extensions>=4.12.0]
+    └── fastapi==0.136.3 [requires: typing-inspection>=0.4.2]
+        ├── kedro_fast_api==0.6.1 [requires: fastapi]
+        └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 
 === typing-inspect ===
 typing-inspect==0.9.0
 └── evidently==0.4.16 [requires: typing-inspect>=0.9.0]
+
+=== typing-inspection ===
+typing-inspection==0.4.2
+└── fastapi==0.136.3 [requires: typing-inspection>=0.4.2]
+    ├── kedro_fast_api==0.6.1 [requires: fastapi]
+    └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
 
 === tzdata ===
 tzdata==2025.2
