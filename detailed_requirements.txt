@@ -810,7 +810,7 @@ pygments==2.20.0
     #   nbconvert
     #   pytest
     #   rich
-pyjwt[crypto]==2.12.1
+pyjwt[crypto]==2.13.0
     # via
     #   azure-ai-ml
     #   mltable
@@ -1103,7 +1103,8 @@ typing-inspect==0.9.0
     # via
     #   evidently
 typing-inspection==0.4.2
-    # via fastapi
+    # via
+    #   fastapi
 tzdata==2025.2
     # via
     #   faker

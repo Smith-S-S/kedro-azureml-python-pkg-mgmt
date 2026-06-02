@@ -4146,7 +4146,7 @@ Pygments==2.20.0
             └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 
 === pyjwt ===
-PyJWT==2.12.1
+PyJWT==2.13.0
 ├── azure-ai-ml==1.31.0 [requires: PyJWT<3.0.0]
 │   └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
 ├── mltable==1.6.1 [requires: PyJWT<3.0.0]
