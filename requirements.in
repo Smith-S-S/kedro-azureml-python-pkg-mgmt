@@ -519,7 +519,7 @@ defusedxml==0.7.1
     # XML parsers that prevent XML bomb and DTD attacks
 oauthlib==3.3.1
     # Generic, spec-compliant implementation of OAuth
-pyjwt==2.12.1
+pyjwt==2.13.0
     # JSON Web Token implementation in Python
 requests-oauthlib==2.0.0
     # OAuthlib authentication support for Requests
