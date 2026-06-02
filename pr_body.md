@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit d5f5f56644126c40910965f34fde18087e0e87bc.
+Automated update to requirements files following changes to `requirements.in` in commit 2153e7cf0816e2b98bb1f60d7adf244adddb617e.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -24,7 +24,7 @@ No orphan candidates found.
 
 ---
 
-## ⚠️ New / untracked packages
+## ✅ New / untracked packages
 
 Packages that pip-compile resolved but that are not listed anywhere in `requirements.in`. Items marked `*** NEW THIS RUN ***` appeared for the first time in this compile. Add them to the appropriate Transitive Libraries section.
 
@@ -32,10 +32,7 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-1 package(s) resolved by pip-compile are not listed in requirements.in:
-  - typing-inspection
-
-Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
+All resolved packages are already listed in requirements.in.
 ```
 
 </details>
@@ -54,7 +51,7 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 platform linux -- Python 3.11.15, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: mock-2.0.0, anyio-3.7.1, Faker-37.8.0, cov-6.3.0
+plugins: anyio-3.7.1, mock-2.0.0, Faker-37.8.0, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
