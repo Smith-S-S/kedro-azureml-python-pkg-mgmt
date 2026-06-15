@@ -72,7 +72,7 @@ anyio==3.7.1
 ├── httpx==0.28.1 [requires: anyio]
 │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│   └── litestar==2.21.1 [requires: httpx>=0.22]
+│   └── litestar==2.24.0 [requires: httpx>=0.22]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── jupyter_server==2.18.2 [requires: anyio>=3.1.0]
 │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
@@ -89,7 +89,7 @@ anyio==3.7.1
 │       ├── jupyterlab==4.5.7 [requires: notebook_shim>=0.2]
 │       │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
 │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
-├── litestar==2.21.1 [requires: anyio>=3]
+├── litestar==2.24.0 [requires: anyio>=3]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
 │   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
@@ -784,12 +784,12 @@ certifi==2024.7.4
 │   └── httpx==0.28.1 [requires: httpcore==1.*]
 │       ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │       │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│       └── litestar==2.21.1 [requires: httpx>=0.22]
+│       └── litestar==2.24.0 [requires: httpx>=0.22]
 │           └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── httpx==0.28.1 [requires: certifi]
 │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│   └── litestar==2.21.1 [requires: httpx>=0.22]
+│   └── litestar==2.24.0 [requires: httpx>=0.22]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── msrest==0.7.1 [requires: certifi>=2017.4.17]
 │   ├── azure-monitor-opentelemetry-exporter==1.0.0b46 [requires: msrest>=0.6.10]
@@ -1190,13 +1190,13 @@ click==8.3.3
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 ├── kedro_fast_api==0.6.1 [requires: click]
-├── litestar==2.21.1 [requires: click]
+├── litestar==2.24.0 [requires: click]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── nltk==3.9.4 [requires: click]
 │   └── evidently==0.4.16 [requires: nltk>=3.6.7]
 ├── pip-tools==7.5.3 [requires: click>=8]
 ├── rich-click==1.9.1 [requires: click>=8]
-│   └── litestar==2.21.1 [requires: rich-click]
+│   └── litestar==2.24.0 [requires: rich-click]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── typer==0.12.5 [requires: click>=8.0.0]
 │   ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -1442,7 +1442,7 @@ executing==2.2.1
 === faker ===
 Faker==37.8.0
 └── polyfactory==2.22.2 [requires: Faker>=5.0.0]
-    └── litestar==2.21.1 [requires: polyfactory>=2.6.3]
+    └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
         └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === fastapi ===
@@ -1665,7 +1665,7 @@ h11==0.16.0
 │   └── httpx==0.28.1 [requires: httpcore==1.*]
 │       ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │       │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│       └── litestar==2.21.1 [requires: httpx>=0.22]
+│       └── litestar==2.24.0 [requires: httpx>=0.22]
 │           └── evidently==0.4.16 [requires: litestar>=2.5.1]
 └── uvicorn==0.35.0 [requires: h11>=0.8]
     ├── evidently==0.4.16 [requires: uvicorn>=0.22.0]
@@ -1678,7 +1678,7 @@ httpcore==1.0.9
 └── httpx==0.28.1 [requires: httpcore==1.*]
     ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
     │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-    └── litestar==2.21.1 [requires: httpx>=0.22]
+    └── litestar==2.24.0 [requires: httpx>=0.22]
         └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === httptools ===
@@ -1693,7 +1693,7 @@ httptools==0.6.3
 httpx==0.28.1
 ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-└── litestar==2.21.1 [requires: httpx>=0.22]
+└── litestar==2.24.0 [requires: httpx>=0.22]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === idna ===
@@ -1702,7 +1702,7 @@ idna==3.16
 │   ├── httpx==0.28.1 [requires: anyio]
 │   │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   │   │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│   │   └── litestar==2.21.1 [requires: httpx>=0.22]
+│   │   └── litestar==2.24.0 [requires: httpx>=0.22]
 │   │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 │   ├── jupyter_server==2.18.2 [requires: anyio>=3.1.0]
 │   │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
@@ -1719,7 +1719,7 @@ idna==3.16
 │   │       ├── jupyterlab==4.5.7 [requires: notebook_shim>=0.2]
 │   │       │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
 │   │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
-│   ├── litestar==2.21.1 [requires: anyio>=3]
+│   ├── litestar==2.24.0 [requires: anyio>=3]
 │   │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 │   ├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
 │   │   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
@@ -1737,7 +1737,7 @@ idna==3.16
 ├── httpx==0.28.1 [requires: idna]
 │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│   └── litestar==2.21.1 [requires: httpx>=0.22]
+│   └── litestar==2.24.0 [requires: httpx>=0.22]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── jsonschema==4.25.1 [requires: idna, extra: format-nongpl]
 │   ├── azure-ai-ml==1.31.0 [requires: jsonschema>=4.0.0,<5.0.0]
@@ -2994,12 +2994,12 @@ lazy_loader==0.4
     └── kedro-azureml==1.0.0 [requires: kedro-datasets>=1.0.0]
 
 === litestar ===
-litestar==2.21.1
+litestar==2.24.0
 └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === litestar-htmx ===
 litestar-htmx==0.5.0
-└── litestar==2.21.1 [requires: litestar-htmx>=0.4.0]
+└── litestar==2.24.0 [requires: litestar-htmx>=0.4.0]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === marisa-trie ===
@@ -3033,10 +3033,10 @@ markdown-it-py==4.0.0
     │   ├── kedro-telemetry==0.7.0 [requires: kedro>=0.18.0,<2.0.0]
     │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── litestar==2.21.1 [requires: rich>=13.0.0]
+    ├── litestar==2.24.0 [requires: rich>=13.0.0]
     │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
     ├── rich-click==1.9.1 [requires: rich>=12]
-    │   └── litestar==2.21.1 [requires: rich-click]
+    │   └── litestar==2.24.0 [requires: rich-click]
     │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
     └── typer==0.12.5 [requires: rich>=10.11.0]
         ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -3160,10 +3160,10 @@ mdurl==0.1.2
         │   ├── kedro-telemetry==0.7.0 [requires: kedro>=0.18.0,<2.0.0]
         │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
         │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-        ├── litestar==2.21.1 [requires: rich>=13.0.0]
+        ├── litestar==2.24.0 [requires: rich>=13.0.0]
         │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
         ├── rich-click==1.9.1 [requires: rich>=12]
-        │   └── litestar==2.21.1 [requires: rich-click]
+        │   └── litestar==2.24.0 [requires: rich-click]
         │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
         └── typer==0.12.5 [requires: rich>=10.11.0]
             ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -3249,7 +3249,7 @@ msal-extensions==1.3.1
 
 === msgspec ===
 msgspec==0.19.0
-└── litestar==2.21.1 [requires: msgspec>=0.18.2]
+└── litestar==2.24.0 [requires: msgspec>=0.18.2]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === msrest ===
@@ -3265,7 +3265,7 @@ multidict==6.7.0
 ├── aiohttp==3.14.0 [requires: multidict>=4.5,<7.0]
 │   └── adlfs==2023.10.0 [requires: aiohttp>=3.7.0]
 │       └── kedro-azureml==1.0.0 [requires: adlfs>=2022.2.0]
-├── litestar==2.21.1 [requires: multidict>=6.0.2]
+├── litestar==2.24.0 [requires: multidict>=6.0.2]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 └── yarl==1.22.0 [requires: multidict>=4.0]
     └── aiohttp==3.14.0 [requires: yarl>=1.17.0,<2.0]
@@ -3274,7 +3274,7 @@ multidict==6.7.0
 
 === multipart ===
 multipart==1.3.1
-└── litestar==2.21.1 [requires: multipart>=1.2.0]
+└── litestar==2.24.0 [requires: multipart>=1.2.0]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === murmurhash ===
@@ -4384,7 +4384,7 @@ pluggy==1.6.0
 
 === polyfactory ===
 polyfactory==2.22.2
-└── litestar==2.21.1 [requires: polyfactory>=2.6.3]
+└── litestar==2.24.0 [requires: polyfactory>=2.6.3]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === portalocker ===
@@ -4702,10 +4702,10 @@ Pygments==2.20.0
     │   ├── kedro-telemetry==0.7.0 [requires: kedro>=0.18.0,<2.0.0]
     │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── litestar==2.21.1 [requires: rich>=13.0.0]
+    ├── litestar==2.24.0 [requires: rich>=13.0.0]
     │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
     ├── rich-click==1.9.1 [requires: rich>=12]
-    │   └── litestar==2.21.1 [requires: rich-click]
+    │   └── litestar==2.24.0 [requires: rich-click]
     │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
     └── typer==0.12.5 [requires: rich>=10.11.0]
         ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -5027,7 +5027,7 @@ PyYAML==6.0.3
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 ├── kedro_fast_api==0.6.1 [requires: PyYAML]
-├── litestar==2.21.1 [requires: PyYAML]
+├── litestar==2.24.0 [requires: PyYAML]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── mltable==1.6.1 [requires: PyYAML>=5.1.0,<7.0.0]
 ├── omegaconf==2.3.0 [requires: PyYAML>=5.1.0]
@@ -5709,10 +5709,10 @@ rich==14.1.0
 │   ├── kedro-telemetry==0.7.0 [requires: kedro>=0.18.0,<2.0.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── litestar==2.21.1 [requires: rich>=13.0.0]
+├── litestar==2.24.0 [requires: rich>=13.0.0]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── rich-click==1.9.1 [requires: rich>=12]
-│   └── litestar==2.21.1 [requires: rich-click]
+│   └── litestar==2.24.0 [requires: rich-click]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 └── typer==0.12.5 [requires: rich>=10.11.0]
     ├── evidently==0.4.16 [requires: typer>=0.3]
@@ -5723,7 +5723,7 @@ rich==14.1.0
 
 === rich-click ===
 rich-click==1.9.1
-└── litestar==2.21.1 [requires: rich-click]
+└── litestar==2.24.0 [requires: rich-click]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === rope ===
@@ -6305,7 +6305,7 @@ sniffio==1.3.1
 │   ├── httpx==0.28.1 [requires: anyio]
 │   │   ├── jupyterlab==4.5.7 [requires: httpx>=0.25.0,<1]
 │   │   │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
-│   │   └── litestar==2.21.1 [requires: httpx>=0.22]
+│   │   └── litestar==2.24.0 [requires: httpx>=0.22]
 │   │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 │   ├── jupyter_server==2.18.2 [requires: anyio>=3.1.0]
 │   │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
@@ -6322,7 +6322,7 @@ sniffio==1.3.1
 │   │       ├── jupyterlab==4.5.7 [requires: notebook_shim>=0.2]
 │   │       │   └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
 │   │       └── notebook==7.5.6 [requires: notebook_shim>=0.2,<0.3]
-│   ├── litestar==2.21.1 [requires: anyio>=3]
+│   ├── litestar==2.24.0 [requires: anyio>=3]
 │   │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 │   ├── starlette==1.1.0 [requires: anyio>=3.6.2,<5]
 │   │   └── fastapi==0.136.3 [requires: starlette>=0.46.0]
@@ -6336,7 +6336,7 @@ sniffio==1.3.1
 │   │       ├── kedro_fast_api==0.6.1 [requires: uvicorn]
 │   │       └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 │   └── watchgod==0.8.2 [requires: anyio>=3.0.0,<4]
-└── litestar==2.21.1 [requires: sniffio>=1.3.1]
+└── litestar==2.24.0 [requires: sniffio>=1.3.1]
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === soupsieve ===
@@ -6522,7 +6522,7 @@ tomli_w==1.2.0
     └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 
 === tornado ===
-tornado==6.5.5
+tornado==6.5.7
 ├── ipykernel==6.30.1 [requires: tornado>=6.2]
 │   └── jupyterlab==4.5.7 [requires: ipykernel>=6.5.0,!=6.30.0]
 │       └── notebook==7.5.6 [requires: jupyterlab>=4.5.7,<4.6]
@@ -7156,7 +7156,7 @@ typing_extensions==4.15.0
 │   ├── kedro-telemetry==0.7.0 [requires: kedro>=0.18.0,<2.0.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── litestar==2.21.1 [requires: typing_extensions]
+├── litestar==2.24.0 [requires: typing_extensions]
 │   └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── opentelemetry-api==1.39.0 [requires: typing_extensions>=4.5.0]
 │   ├── azure-core-tracing-opentelemetry==1.0.0b12 [requires: opentelemetry-api>=1.12.0]
@@ -7495,7 +7495,7 @@ typing_extensions==4.15.0
 │               └── azure-ai-ml==1.31.0 [requires: azure-monitor-opentelemetry]
 │                   └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
 ├── polyfactory==2.22.2 [requires: typing_extensions>=4.6.0]
-│   └── litestar==2.21.1 [requires: polyfactory>=2.6.3]
+│   └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
 │       └── evidently==0.4.16 [requires: litestar>=2.5.1]
 ├── pydantic==2.10.6 [requires: typing_extensions>=4.12.2]
 │   ├── confection==0.1.5 [requires: pydantic>=1.7.4,<3.0.0,!=1.8.1,!=1.8]
@@ -7740,7 +7740,7 @@ typing-inspection==0.4.2
 tzdata==2025.2
 ├── Faker==37.8.0 [requires: tzdata]
 │   └── polyfactory==2.22.2 [requires: Faker>=5.0.0]
-│       └── litestar==2.21.1 [requires: polyfactory>=2.6.3]
+│       └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
 │           └── evidently==0.4.16 [requires: litestar>=2.5.1]
 └── pandas==2.3.2 [requires: tzdata>=2022.7]
     ├── evidently==0.4.16 [requires: pandas>=1.3.5]
