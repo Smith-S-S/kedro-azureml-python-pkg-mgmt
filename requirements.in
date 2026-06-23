@@ -127,7 +127,7 @@ jupyter-server==2.20.0
     # The backend web server for Jupyter applications
 jupyter-server-terminals==0.5.3
     # Terminal support for Jupyter Server
-jupyterlab==4.5.9
+jupyterlab==4.6.0
     # The next-generation user interface for Project Jupyter
 jupyterlab-pygments==0.3.0
     # Pygments theme for JupyterLab syntax highlighting
