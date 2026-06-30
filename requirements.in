@@ -304,7 +304,7 @@ markdown-it-py==4.0.0
     # Python port of markdown-it (Markdown parser)
 marshmallow==3.26.2
     # Simplified object serialization and deserialization
-mistune==3.3.0
+mistune==3.3.2
     # Fast markdown parser
 more-itertools==10.7.0
     # collects additional building blocks, recipes, and routines for working with Python iterables
