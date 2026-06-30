@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 47d6156570ccf7ebbe915f590572c2e5fafef201.
+Automated update to requirements files following changes to `requirements.in` in commit 28d6ea3320a4b8bd6cc6b19662b8ded3484a3c9e.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
