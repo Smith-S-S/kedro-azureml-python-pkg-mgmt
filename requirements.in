@@ -186,8 +186,8 @@ plotly==6.3.0
     # Interactive graphing library for Python
 preshed==3.0.9
     # Cython hash table maps (used by spaCy)
-pyarrow==17.0.0
-    # Python library for Apache Arrow (high-performance data memory format)current:pyarrow==24.0.0
+pyarrow==24.0.0
+    # Python library for Apache Arrow (high-performance data memory format)
 pytz==2025.2
     # Brings the Olson tz database into Python
 scipy==1.16.1
