@@ -16,9 +16,12 @@ aiohappyeyeballs==2.6.1
 aiohttp==3.14.1
     # via
     #   adlfs
+    #   mlflow
 aiosignal==1.4.0
     # via
     #   aiohttp
+alembic==1.18.5
+    # via mlflow
 annotated-doc==0.0.4
     # via
     #   fastapi
@@ -149,6 +152,8 @@ binaryornot==0.4.4
 bleach[css]==6.4.0
     # via
     #   nbconvert
+blinker==1.9.0
+    # via flask
 blis==1.3.3
     # via
     #   thinc
@@ -156,7 +161,9 @@ build==1.2.1
     # via
     #   kedro
 cachetools==5.5.2
-    # via -r requirements.in
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
 catalogue==2.0.10
     # via
     #   spacy
@@ -183,9 +190,11 @@ click==8.3.3
     # via
     #   click-default-group
     #   cookiecutter
+    #   flask
     #   kedro
     #   kedro-fast-api
     #   litestar
+    #   mlflow-skinny
     #   nltk
     #   rich-click
     #   typer
@@ -200,6 +209,7 @@ cloudpickle==2.2.1
     # via
     #   azureml-dataprep
     #   kedro-azureml
+    #   mlflow-skinny
 colorama==0.4.6
     # via
     #   azure-ai-ml
@@ -222,11 +232,13 @@ coverage[toml]==7.6.4
 cross-web==0.7.0
     # via
     #   strawberry-graphql
-cryptography==49.0.0
+cryptography==45.0.3
     # via
     #   azure-identity
     #   azure-storage-blob
     #   azure-storage-file-share
+    #   google-auth
+    #   mlflow
     #   mltable
     #   msal
     #   pyjwt
@@ -238,6 +250,10 @@ cymem==2.0.11
     #   preshed
     #   spacy
     #   thinc
+databricks-sdk==0.120.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
 debugpy==1.8.17
     # via
     #   ipykernel
@@ -253,6 +269,8 @@ distro==1.9.0
 dnspython==2.8.0
     # via
     #   email-validator
+docker==7.1.0
+    # via mlflow
 dynaconf==3.2.13
     # via
     #   evidently
@@ -273,6 +291,7 @@ fastapi==0.136.3
     # via
     #   kedro-fast-api
     #   kedro-viz
+    #   mlflow-skinny
 fastapi-cli==0.0.5
     # via -r requirements.in
 fastjsonschema==2.21.2
@@ -281,6 +300,12 @@ fastjsonschema==2.21.2
 filelock==3.20.3
     # via
     #   iterative-telemetry
+flask==3.1.3
+    # via
+    #   flask-cors
+    #   mlflow
+flask-cors==6.0.5
+    # via mlflow
 fonttools==4.61.0
     # via
     #   matplotlib
@@ -304,12 +329,23 @@ gitdb==4.0.12
 gitpython==3.1.50
     # via
     #   kedro
+    #   mlflow-skinny
+google-auth==2.55.1
+    # via databricks-sdk
+graphene==3.4.3
+    # via mlflow
 graphql-core==3.2.6
     # via
+    #   graphene
+    #   graphql-relay
     #   strawberry-graphql
+graphql-relay==3.2.0
+    # via graphene
 greenlet==3.2.4
     # via
     #   sqlalchemy
+gunicorn==26.0.0
+    # via mlflow
 h11==0.16.0
     # via
     #   httpcore
@@ -324,6 +360,8 @@ httpx==0.28.1
     # via
     #   jupyterlab
     #   litestar
+huey==3.1.1
+    # via mlflow
 idna==3.16
     # via
     #   anyio
@@ -334,6 +372,7 @@ idna==3.16
     #   yarl
 importlib-metadata==8.7.0
     # via
+    #   mlflow-skinny
     #   opentelemetry-api
 iniconfig==2.1.0
     # via
@@ -358,12 +397,15 @@ isoduration==20.11.0
 iterative-telemetry==0.0.8
     # via
     #   evidently
+itsdangerous==2.2.0
+    # via flask
 jedi==0.19.2
     # via
     #   ipython
 jinja2==3.1.6
     # via
     #   cookiecutter
+    #   flask
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -482,6 +524,8 @@ litestar==2.24.0
 litestar-htmx==0.5.0
     # via
     #   litestar
+mako==1.3.12
+    # via alembic
 marisa-trie==1.2.0
     # via
     #   language-data
@@ -490,13 +534,17 @@ markdown-it-py==4.0.0
     #   rich
 markupsafe==3.0.3
     # via
+    #   flask
     #   jinja2
+    #   mako
     #   nbconvert
+    #   werkzeug
 marshmallow==3.26.2
     # via
     #   azure-ai-ml
 matplotlib==3.9.4
     # via
+    #   mlflow
     #   seaborn
 matplotlib-inline==0.1.7
     # via
@@ -508,6 +556,13 @@ mdurl==0.1.2
 mistune==3.3.2
     # via
     #   nbconvert
+mlflow==3.14.0
+    # via -r requirements.in
+mlflow-skinny==3.14.0
+    # via
+    #   mlflow
+mlflow-tracing==3.14.0
+    # via mlflow
 mltable==1.6.3
     # via -r requirements.in
 more-itertools==10.7.0
@@ -579,11 +634,13 @@ numpy==1.26.4
     #   contourpy
     #   evidently
     #   matplotlib
+    #   mlflow
     #   pandas
     #   patsy
     #   scikit-learn
     #   scipy
     #   seaborn
+    #   skops
     #   spacy
     #   statsmodels
     #   thinc
@@ -597,6 +654,8 @@ opentelemetry-api==1.39.0
     # via
     #   azure-core-tracing-opentelemetry
     #   azure-monitor-opentelemetry-exporter
+    #   mlflow-skinny
+    #   mlflow-tracing
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
@@ -653,6 +712,10 @@ opentelemetry-instrumentation-wsgi==0.60b0
     # via
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
+opentelemetry-proto==1.43.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
 opentelemetry-resource-detector-azure==0.1.5
     # via
     #   azure-monitor-opentelemetry
@@ -660,6 +723,8 @@ opentelemetry-sdk==1.39.0
     # via
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
+    #   mlflow-skinny
+    #   mlflow-tracing
     #   opentelemetry-resource-detector-azure
 opentelemetry-semantic-conventions==0.60b0
     # via
@@ -693,6 +758,7 @@ overrides==7.7.0
 packaging==25.0
     # via
     #   build
+    #   gunicorn
     #   ipykernel
     #   jupyter-events
     #   jupyter-server
@@ -702,12 +768,15 @@ packaging==25.0
     #   lazy-loader
     #   marshmallow
     #   matplotlib
+    #   mlflow-skinny
+    #   mlflow-tracing
     #   nbconvert
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-flask
     #   plotly
     #   pytest
     #   pytoolconfig
+    #   skops
     #   spacy
     #   statsmodels
     #   strawberry-graphql
@@ -717,6 +786,7 @@ pandas[parquet]==2.3.2
     # via
     #   evidently
     #   kedro-viz
+    #   mlflow
     #   seaborn
     #   statsmodels
 pandocfilters==1.5.1
@@ -764,6 +834,8 @@ preshed==3.0.9
     # via
     #   spacy
     #   thinc
+prettytable==3.17.0
+    # via skops
 prometheus-client==0.23.1
     # via
     #   jupyter-server
@@ -774,6 +846,12 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
+protobuf==6.33.6
+    # via
+    #   databricks-sdk
+    #   mlflow-skinny
+    #   mlflow-tracing
+    #   opentelemetry-proto
 psutil==7.1.0
     # via
     #   azure-monitor-opentelemetry-exporter
@@ -789,7 +867,12 @@ pyarrow==24.0.0
     # via
     #   azureml-dataprep
     #   kedro-azureml
+    #   mlflow
     #   pandas
+pyasn1==0.6.3
+    # via pyasn1-modules
+pyasn1-modules==0.4.2
+    # via google-auth
 pycparser==2.23
     # via
     #   cffi
@@ -800,6 +883,8 @@ pydantic==2.10.6
     #   fastapi
     #   kedro-azureml
     #   kedro-viz
+    #   mlflow-skinny
+    #   mlflow-tracing
     #   spacy
     #   thinc
     #   weasel
@@ -839,6 +924,7 @@ pytest-mock==2.0.0
 python-dateutil==2.9.0.post0
     # via
     #   arrow
+    #   graphene
     #   jupyter-client
     #   matplotlib
     #   mltable
@@ -847,6 +933,7 @@ python-dateutil==2.9.0.post0
     #   strictyaml
 python-dotenv==1.2.2
     # via
+    #   mlflow-skinny
     #   uvicorn
 python-json-logger==3.3.0
     # via
@@ -874,6 +961,7 @@ pyyaml==6.0.3
     #   kedro
     #   kedro-fast-api
     #   litestar
+    #   mlflow-skinny
     #   mltable
     #   omegaconf
     #   uvicorn
@@ -895,10 +983,13 @@ requests==2.33.0
     #   azure-core
     #   azure-datalake-store
     #   cookiecutter
+    #   databricks-sdk
+    #   docker
     #   evidently
     #   iterative-telemetry
     #   jupyterlab-server
     #   kedro-telemetry
+    #   mlflow-skinny
     #   msal
     #   msrest
     #   requests-oauthlib
@@ -946,10 +1037,14 @@ ruff==0.5.7
 scikit-learn==1.7.1
     # via
     #   evidently
+    #   mlflow
+    #   skops
 scipy==1.16.1
     # via
     #   evidently
+    #   mlflow
     #   scikit-learn
+    #   skops
     #   statsmodels
 seaborn==0.13.2
     # via -r requirements.in
@@ -970,6 +1065,8 @@ six==1.17.0
     #   patsy
     #   python-dateutil
     #   rfc3339-validator
+skops==0.14.0
+    # via mlflow
 smart-open==7.0.4
     # via
     #   weasel
@@ -993,7 +1090,11 @@ spacy-loggers==1.0.5
     #   spacy
 sqlalchemy==2.0.44
     # via
+    #   alembic
     #   kedro-viz
+    #   mlflow
+sqlparse==0.5.5
+    # via mlflow-skinny
 srsly==2.4.8
     # via
     #   confection
@@ -1006,6 +1107,7 @@ stack-data==0.6.3
 starlette==1.3.1
     # via
     #   fastapi
+    #   mlflow-skinny
 statsmodels==0.14.4
     # via
     #   evidently
@@ -1079,6 +1181,7 @@ typing-extensions==4.15.0
     # via
     #   aiohttp
     #   aiosignal
+    #   alembic
     #   azure-ai-ml
     #   azure-core
     #   azure-identity
@@ -1089,9 +1192,11 @@ typing-extensions==4.15.0
     #   cross-web
     #   exceptiongroup
     #   fastapi
+    #   graphene
     #   ipython
     #   kedro
     #   litestar
+    #   mlflow-skinny
     #   opentelemetry-api
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
@@ -1121,6 +1226,8 @@ uri-template==1.3.0
     #   jsonschema
 urllib3==2.7.0
     # via
+    #   databricks-sdk
+    #   docker
     #   requests
 uvicorn[standard]==0.35.0
     # via
@@ -1128,6 +1235,7 @@ uvicorn[standard]==0.35.0
     #   fastapi-cli
     #   kedro-fast-api
     #   kedro-viz
+    #   mlflow-skinny
 uvloop==0.20.0
     # via
     #   uvicorn
@@ -1147,6 +1255,7 @@ watchgod==0.8.2
     # via -r requirements.in
 wcwidth==0.2.14
     # via
+    #   prettytable
     #   prompt-toolkit
 weasel==0.4.1
     # via
@@ -1164,6 +1273,10 @@ websocket-client==1.8.0
 websockets==14.2
     # via
     #   uvicorn
+werkzeug==3.1.8
+    # via
+    #   flask
+    #   flask-cors
 wrapt==1.17.3
     # via
     #   opentelemetry-instrumentation
