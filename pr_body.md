@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 28d6ea3320a4b8bd6cc6b19662b8ded3484a3c9e.
+Automated update to requirements files following changes to `requirements.in` in commit 96a9d59843ddcd86240b4292242170bb85b5211d.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -51,7 +51,7 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.11.15, pytest-9.1.0, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
 plugins: mock-2.0.0, anyio-3.7.1, Faker-37.8.0, cov-6.3.0
