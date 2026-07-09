@@ -446,7 +446,8 @@ fsspec==2023.10.0
     # Filesystem specification (interface for various storage backends)
 greenlet==3.2.4
     # Lightweight coroutines for in-process concurrent programming
-importlib-metadata==8.7.0
+importlib-metadata==7.2.1
+#importlib-metadata==8.7.0
     # Read metadata from Python packages
 iterative-telemetry==0.0.8
     # Telemetry package for Iterative tools
