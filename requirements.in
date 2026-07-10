@@ -186,7 +186,7 @@ plotly==6.3.0
     # Interactive graphing library for Python
 preshed==3.0.9
     # Cython hash table maps (used by spaCy)
-pyarrow==15.0.2
+pyarrow==17.0.0
     # Python library for Apache Arrow (high-performance data memory format)pyarrow==24.0.0
 pytz==2025.2
     # Brings the Olson tz database into Python
@@ -514,7 +514,8 @@ bleach==6.4.0
     # HTML sanitization library to prevent XSS attacks
 certifi==2024.7.4
     # Python package for providing Mozilla's CA Bundle
-cryptography==49.0.0
+#cryptography==49.0.0
+cryptography==45.0.6
     # Recipes and primitives for cryptography
 defusedxml==0.7.1
     # XML parsers that prevent XML bomb and DTD attacks
