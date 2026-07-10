@@ -1,4 +1,21 @@
-1 package(s) resolved by pip-compile are not listed in requirements.in:
+18 package(s) resolved by pip-compile are not listed in requirements.in:
+  - alembic
+  - blinker
+  - databricks-sdk
+  - docker
+  - flask
+  - google-auth
+  - graphene
+  - graphql-relay
+  - gunicorn
+  - itsdangerous
   - jupyter-builder
+  - mako
+  - mlflow-tracing
+  - protobuf
+  - pyasn1
+  - pyasn1-modules
+  - sqlparse
+  - werkzeug
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
