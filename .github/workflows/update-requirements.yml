@@ -28,8 +28,12 @@ jobs:
           
       - name: Configure git credentials for container
         run: |
-          git config --global url."https://x-access-token:${{ secrets.WORKFLOW_PAT }}@github.com/".insteadOf "https://github.com/"
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          # git config --global url."https://x-access-token:${{ secrets.WORKFLOW_PAT }}@github.com/".insteadOf "https://github.com/"
+          # git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git remote set-url origin https://x-access-token:${{ secrets.WORKFLOW_PAT }}@github.com/${{ github.repository }}.git
+          git push --force-with-lease origin auto/update-requirements:refs/heads/auto/update-requirements
+
+
           
       # actions/setup-python is not needed — the container already has Python 3.11.
       # Cache key includes 'devcontainer' to avoid collisions with any old ubuntu runner caches.
