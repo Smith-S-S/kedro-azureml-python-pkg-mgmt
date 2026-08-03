@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - requirements.in
+  # Allows re-running the whole pipeline from the Actions tab without having to
+  # touch requirements.in (useful when debugging credentials or CI changes).
+  workflow_dispatch:
 
 jobs:
   update-requirements:
@@ -22,6 +25,40 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Fall back to the built-in GITHUB_TOKEN when WORKFLOW_PAT is not set.
+          # The permissions block above already grants it write access.
+          token: ${{ secrets.WORKFLOW_PAT || github.token }}
+          persist-credentials: true
+
+      # Fail fast (and loudly) if the token we will push with cannot write here.
+      # Without this the job burns ~10 minutes before dying at the final step.
+      - name: Check push credentials
+        env:
+          GH_TOKEN: ${{ secrets.WORKFLOW_PAT || github.token }}
+        run: |
+          if [ -n "${{ secrets.WORKFLOW_PAT }}" ]; then
+            echo "Pushing as: secrets.WORKFLOW_PAT"
+          else
+            echo "Pushing as: built-in GITHUB_TOKEN (secrets.WORKFLOW_PAT is empty)"
+          fi
+          push_ok=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+                      "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}" \
+                    | python3 -c "import sys, json; print(json.load(sys.stdin).get('permissions', {}).get('push', 'unknown'))" \
+                    2>/dev/null || echo unknown)
+          echo "API reports push permission: ${push_ok}"
+          if [ "${push_ok}" = "False" ]; then
+            echo "::error::Token cannot push to ${GITHUB_REPOSITORY}. Fine-grained PAT: grant 'Contents: Read and write' + 'Pull requests: Read and write' and select this repository. Classic PAT: needs the 'repo' scope. Built-in token: enable Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests'."
+            exit 1
+          fi
+
+      # The job runs in a container, so the workspace is owned by a different uid
+      # than the one git runs as. Without this, every git call fails with
+      # "detected dubious ownership". Note: this only marks the directory safe —
+      # it must NOT rewrite github.com URLs to embed a token, which would
+      # override the credentials checkout and create-pull-request set up.
+      - name: Mark workspace as a safe git directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       # actions/setup-python is not needed — the container already has Python 3.11.
       # Cache key includes 'devcontainer' to avoid collisions with any old ubuntu runner caches.
@@ -49,6 +86,9 @@ jobs:
       - name: Run pip-compile
         id: pip_compile
         run: |
+          # pipefail is required: without it the step's status is tee's (always 0)
+          # and a resolver conflict would never be reported as a failure.
+          set -o pipefail
           pip-compile --output-file=detailed_requirements.txt requirements.in \
             2>&1 | tee pip_compile_output.txt
         continue-on-error: true
@@ -110,6 +150,7 @@ jobs:
       - name: Run requirements audit
         id: audit
         run: |
+          set +e   # keep going so exit_code is still written to GITHUB_OUTPUT
           python scripts/audit_requirements.py \
             --detailed     detailed_requirements.txt \
             --req-in       requirements.in \
@@ -124,7 +165,8 @@ jobs:
         id: smoke_test
         run: |
           pytest tests/smoke/ -v 2>&1 | tee smoke_test_output.txt
-          exit_code=$?
+          # $? here would be tee's status (always 0) — take pytest's instead.
+          exit_code=${PIPESTATUS[0]}
           echo "exit_code=${exit_code}" >> "$GITHUB_OUTPUT"
         continue-on-error: true
 
@@ -153,7 +195,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.WORKFLOW_PAT }}
+          token: ${{ secrets.WORKFLOW_PAT || github.token }}
           branch: auto/update-requirements
           base: main
           commit-message: "chore: regenerate requirements files"
