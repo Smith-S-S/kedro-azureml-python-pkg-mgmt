@@ -21,10 +21,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 
         with:
           token: ${{ secrets.WORKFLOW_PAT }}
-
+          persist-credentials: true
+          
+      - name: Configure git credentials for container
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.WORKFLOW_PAT }}@github.com/".insteadOf "https://github.com/"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          
       # actions/setup-python is not needed — the container already has Python 3.11.
       # Cache key includes 'devcontainer' to avoid collisions with any old ubuntu runner caches.
       - name: Cache pip packages
