@@ -34,7 +34,7 @@ kedro-viz==11.1.0
 
 ## Other MLOps Utilities
 omegaconf==2.3.0
-evidently==0.4.16
+evidently==0.7.21
 
 ## NLP tools
 spacy==3.8.2
@@ -174,7 +174,7 @@ murmurhash==1.0.10
     # Cython bindings for MurmurHash (hashing function)
 networkx==3.5
     # Library for creating and analyzing complex networks/graphs
-nltk==3.10.2
+nltk==3.10.3
     # Natural Language Toolkit for text processing
 patsy==0.5.6
     # Describing statistical models (used by Statsmodels)
@@ -389,7 +389,7 @@ faker==37.8.0
     # Generates fake data for testing
 gitdb==4.0.12
     # Git Object Database (used by GitPython)
-gitpython==3.1.57
+gitpython==3.1.59
     # Python library used to interact with Git repositories
 jedi==0.19.2
     # Static analysis and autocompletion tool
