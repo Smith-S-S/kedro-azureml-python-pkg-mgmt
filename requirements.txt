@@ -80,7 +80,7 @@ fqdn==1.5.1
 frozenlist==1.8.0
 fsspec==2023.10.0
 gitdb==4.0.12
-gitpython==3.1.57
+gitpython==3.1.59
 graphql-core==3.2.6
 greenlet==3.2.4
 h11==0.16.0
@@ -151,7 +151,7 @@ nbconvert==7.17.1
 nbformat==5.10.4
 nest-asyncio==1.6.0
 networkx==3.5
-nltk==3.10.2
+nltk==3.10.3
 notebook==7.6.0
 notebook-shim==0.2.4
 numpy==1.26.4
