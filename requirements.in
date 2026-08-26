@@ -34,7 +34,7 @@ kedro-viz==11.1.0
 
 ## Other MLOps Utilities
 omegaconf==2.3.0
-evidently==0.7.21
+evidently==0.4.16
 
 ## NLP tools
 spacy==3.8.2
