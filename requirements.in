@@ -71,7 +71,7 @@ tomli==2.2.1
     # A lil' TOML parser
 types-python-dateutil==2.9.0.20250822
     # Typing stubs for python-dateutil
-watchgod==0.8.2
+#watchgod==0.8.2
     # Simple file watching and code reload
 
 #####################################
