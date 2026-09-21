@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 4cbb8c5f2b3b66b6da7eff18851ae34a7767d59d.
+Automated update to requirements files following changes to `requirements.in` in commit bb11d7ad6a2f8ceda286fd04e4bb492786298369.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,8 +32,9 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-1 package(s) resolved by pip-compile are not listed in requirements.in:
+2 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
+  - watchgod
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
@@ -61,7 +62,7 @@ tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
 tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports PASSED    [ 66%]
 tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
 
-============================== 3 passed in 0.61s ===============================
+============================== 3 passed in 0.49s ===============================
 ```
 
 </details>
