@@ -360,7 +360,7 @@ tinycss2==1.4.0
     # Low-level CSS parser
 tomli-w==1.2.0
     # A lil' TOML writer
-typing-extensions==5.0.0
+typing-extensions==4.16.0
     # Typing module, providing runtime support for type hints as specified by PEP 484 and subsequent PEPs.
 typing-inspect==0.9.0
     # Provides tools to inspect type annotations at runtime
