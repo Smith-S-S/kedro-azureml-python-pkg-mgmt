@@ -448,7 +448,7 @@ kedro-azureml==1.0.0
     # via -r requirements.in
 kedro-boot==0.3.0
     # via -r requirements.in
-kedro-datasets==9.3.0
+kedro-datasets==9.6.0
     # via
     #   kedro-azureml
 kedro-docker==0.6.0
