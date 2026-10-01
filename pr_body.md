@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit fd2a5ce3a630f955c464ac957a62feddadb8c8f7.
+Automated update to requirements files following changes to `requirements.in` in commit d74506ab4a76de17ca0e9b75313b002b84a49d35.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -61,7 +61,7 @@ tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
 tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports PASSED    [ 66%]
 tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
 
-============================== 3 passed in 0.62s ===============================
+============================== 3 passed in 0.61s ===============================
 ```
 
 </details>
