@@ -425,7 +425,7 @@ jupyter-server==2.21.1
 jupyter-server-terminals==0.5.3
     # via
     #   jupyter-server
-jupyterlab==4.6.2
+jupyterlab==4.6.4
     # via
     #   notebook
 jupyterlab-pygments==0.3.0
@@ -567,7 +567,7 @@ networkx==3.5
 nltk==3.10.3
     # via
     #   evidently
-notebook==7.6.0
+notebook==7.6.3
     # via -r requirements.in
 notebook-shim==0.2.4
     # via
@@ -1038,7 +1038,7 @@ tomli-w==1.2.0
     # via
     #   kedro
     #   kedro-telemetry
-tornado==6.5.8
+tornado==6.5.10
     # via
     #   ipykernel
     #   jupyter-client
