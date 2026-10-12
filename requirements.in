@@ -234,7 +234,7 @@ markupsafe==3.0.3
     # Safely escapes characters for HTML/XML
 mdurl==0.1.2
     # URL utilities for Markdown processing
-multidict==7.1.0
+multidict==6.9.1
     # Multivalue dictionary implementation (used by aiohttp)
 pyzmq==27.1.0
     # Python bindings for ZeroMQ messaging library
