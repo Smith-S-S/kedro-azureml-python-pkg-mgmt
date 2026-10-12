@@ -216,7 +216,7 @@ dnspython==2.8.0
     # DNS toolkit for Python
 fqdn==1.5.1
     # Validate Fully Qualified Domain Names (FQDNs)
-graphql-core==3.2.6
+graphql-core==3.3.0
     # Core implementation of GraphQL for Python
 h11==0.16.0
     # A pure-Python, bring-your-own-I/O implementation of HTTP/1.1
