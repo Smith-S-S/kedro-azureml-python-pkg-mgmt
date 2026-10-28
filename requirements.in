@@ -553,11 +553,11 @@ annotated-doc==0.0.4
     # Document parameters, class attributes, return types, and variables inline
 asgiref==3.11.0
     # ASGI specifications, helper code, and adapters
-azure-core-tracing-opentelemetry==1.0.0b12
+azure-core-tracing-opentelemetry==1.0.0b13
     # OpenTelemetry tracing plugin for the Azure Core library
 azure-monitor-opentelemetry==1.8.5
     # The Azure Monitor OpenTelemetry Distro
-azure-monitor-opentelemetry-exporter==1.0.0b46
+azure-monitor-opentelemetry-exporter==1.0.0b58
     # Exports OpenTelemetry data to Azure Monitor
 backoff==2.2.1
     # Provides function decorators for configurable retry logic
