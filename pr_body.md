@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit fe9f1021467ec73150cdb0b19400db8d8619421b.
+Automated update to requirements files following changes to `requirements.in` in commit 0857f0064c8f4315d8906ddf6d2c648a0b95f08e.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,8 +32,10 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-1 package(s) resolved by pip-compile are not listed in requirements.in:
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
+  - opentelemetry-instrumentation-httpx
+  - opentelemetry-instrumentation-logging
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
@@ -54,14 +56,41 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 platform linux -- Python 3.11.17, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: anyio-4.15.1, mock-2.0.0, Faker-37.8.0, cov-6.3.0
+plugins: mock-2.0.0, Faker-37.8.0, anyio-4.15.1, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
-tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports PASSED    [ 66%]
+tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports FAILED    [ 66%]
 tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
 
-============================== 3 passed in 0.58s ===============================
+=================================== FAILURES ===================================
+__________________________ test_kedro_azureml_imports __________________________
+
+    def test_kedro_azureml_imports():
+        """kedro-azureml and its runtime dependencies must be importable.
+    
+        cachetools is a known runtime dependency of kedro-azureml that is not
+        always surfaced by pip-compile — if it goes missing, this test will catch it.
+        """
+        import kedro_azureml  # noqa: F401
+        import cachetools  # noqa: F401
+        import cloudpickle  # noqa: F401
+>       import pyarrow  # noqa: F401
+        ^^^^^^^^^^^^^^
+
+tests/smoke/test_kedro_pipeline.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python3.11/site-packages/pyarrow/__init__.py:59: in <module>
+    from pyarrow.lib import (BuildInfo, CppBuildInfo, RuntimeInfo, set_timezone_db_path,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4
+
+pyarrow/lib.pyx:42: ImportError
+=========================== short test summary info ============================
+FAILED tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports - ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4
+========================= 1 failed, 2 passed in 0.54s ==========================
 ```
 
 </details>
