@@ -571,7 +571,7 @@ narwhals==2.15.0
     # Lightweight compatibility layer for Pandas and Polars
 opentelemetry-api==1.45.1
     # The OpenTelemetry Python API
-opentelemetry-instrumentation==0.66b0
+opentelemetry-instrumentation==0.66b1
     # Base logic for OpenTelemetry instrumentation
 opentelemetry-instrumentation-asgi==0.66b0
     # Instrumentation for ASGI web applications
