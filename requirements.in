@@ -573,25 +573,25 @@ opentelemetry-api==1.45.1
     # The OpenTelemetry Python API
 opentelemetry-instrumentation==0.66b1
     # Base logic for OpenTelemetry instrumentation
-opentelemetry-instrumentation-asgi==0.66b0
+opentelemetry-instrumentation-asgi==0.66b1
     # Instrumentation for ASGI web applications
-opentelemetry-instrumentation-dbapi==0.66b0
+opentelemetry-instrumentation-dbapi==0.66b1
     # Instrumentation for Database API (DBAPI) compliant adapters
-opentelemetry-instrumentation-django==0.66b0
+opentelemetry-instrumentation-django==0.66b1
     # Instrumentation for the Django web framework
-opentelemetry-instrumentation-fastapi==0.66b0
+opentelemetry-instrumentation-fastapi==0.66b1
     # Instrumentation for the FastAPI web framework
-opentelemetry-instrumentation-flask==0.66b0
+opentelemetry-instrumentation-flask==0.66b1
     # Instrumentation for the Flask web framework
-opentelemetry-instrumentation-psycopg2==0.66b0
+opentelemetry-instrumentation-psycopg2==0.66b1
     # Instrumentation for the psycopg2 database adapter
-opentelemetry-instrumentation-requests==0.66b0
+opentelemetry-instrumentation-requests==0.66b1
     # Instrumentation for the requests library
-opentelemetry-instrumentation-urllib==0.66b0
+opentelemetry-instrumentation-urllib==0.66b1
     # Instrumentation for the urllib library
-opentelemetry-instrumentation-urllib3==0.66b0
+opentelemetry-instrumentation-urllib3==0.66b1
     # Instrumentation for the urllib3 library
-opentelemetry-instrumentation-wsgi==0.66b0
+opentelemetry-instrumentation-wsgi==0.66b1
     # Instrumentation for WSGI web applications
 opentelemetry-resource-detector-azure==0.3.0
 # Resource detector for Azure environments
