@@ -438,7 +438,7 @@ colorama==0.4.6
     # Cross-platform colored terminal text
 distro==1.9.0
     # OS information provider
-filelock==4.2.1
+filelock==4.2.4
     # Platform-independent file locking
 fsspec==2026.9.0
     # Filesystem specification (interface for various storage backends)
@@ -510,7 +510,7 @@ argon2-cffi-bindings==25.1.0
     # Low-level CFFI bindings for Argon2
 bleach==6.4.0
     # HTML sanitization library to prevent XSS attacks
-certifi==2026.10.19
+certifi==2026.10.23
     # Python package for providing Mozilla's CA Bundle
 cryptography==50.0.0
     # Recipes and primitives for cryptography
