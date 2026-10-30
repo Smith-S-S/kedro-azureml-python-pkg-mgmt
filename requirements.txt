@@ -198,7 +198,7 @@ propcache==0.4.1
 psutil==7.1.0
 ptyprocess==0.7.0
 pure-eval==0.2.3
-pyarrow==26.0.0
+pyarrow==24.0.0
 pycparser==2.23
 pydantic==2.10.6
 pydantic-core==2.27.2

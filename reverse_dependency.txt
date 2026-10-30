@@ -2541,7 +2541,7 @@ pure_eval==0.2.3
         └── kedro-viz==11.1.0 [requires: ipython>=7.0.0,<9.0]
 
 === pyarrow ===
-pyarrow==26.0.0
+pyarrow==24.0.0
 ├── azureml-dataprep==5.1.6 [requires: pyarrow>=0.17.0, extra: parquet]
 │   └── mltable==1.6.3 [requires: azureml-dataprep>=5.1.0a0,<5.5.0a0]
 ├── kedro-azureml==1.0.0 [requires: pyarrow>=11.0.0]
