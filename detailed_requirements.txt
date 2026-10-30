@@ -158,7 +158,7 @@ catalogue==2.0.10
     #   spacy
     #   srsly
     #   thinc
-certifi==2026.10.19
+certifi==2026.10.23
     # via
     #   httpcore
     #   httpx
@@ -275,7 +275,7 @@ fastapi-cli==0.0.5
 fastjsonschema==2.21.2
     # via
     #   nbformat
-filelock==4.2.1
+filelock==4.2.4
     # via
     #   iterative-telemetry
 fonttools==4.61.0

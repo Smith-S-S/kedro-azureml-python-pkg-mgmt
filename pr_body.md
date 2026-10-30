@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 0857f0064c8f4315d8906ddf6d2c648a0b95f08e.
+Automated update to requirements files following changes to `requirements.in` in commit e3fe2f2f80096dd7c888d367a54d08c78eeb8bef.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -53,10 +53,10 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.11.17, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: mock-2.0.0, Faker-37.8.0, anyio-4.15.1, cov-6.3.0
+plugins: Faker-37.8.0, mock-2.0.0, cov-6.3.0, anyio-4.15.1
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
@@ -84,13 +84,20 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     from pyarrow.lib import (BuildInfo, CppBuildInfo, RuntimeInfo, set_timezone_db_path,
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
->   ???
+>   raise ImportError(
 E   ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4
 
 pyarrow/lib.pyx:42: ImportError
+=============================== warnings summary ===============================
+../../../usr/local/lib/python3.11/site-packages/pytest_mock/plugin.py:200
+  /usr/local/lib/python3.11/site-packages/pytest_mock/plugin.py:200: PytestRemovedIn10Warning: @pytest.yield_fixture is deprecated.
+  Use @pytest.fixture instead; they are the same.
+    @pytest.yield_fixture
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 =========================== short test summary info ============================
 FAILED tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports - ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4
-========================= 1 failed, 2 passed in 0.54s ==========================
+==================== 1 failed, 2 passed, 1 warning in 0.61s ====================
 ```
 
 </details>
