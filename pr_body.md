@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit c12c527cd83b744c296d579e003f74ac9b2c49bb.
+Automated update to requirements files following changes to `requirements.in` in commit 73856dc030d9bf3d349d15f1577a0c1d7ae96d4e.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -56,7 +56,7 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: Faker-37.8.0, mock-2.0.0, cov-6.3.0, anyio-4.15.1
+plugins: anyio-4.15.1, mock-2.0.0, Faker-37.8.0, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
@@ -70,7 +70,7 @@ tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
     @pytest.yield_fixture
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 3 passed, 1 warning in 0.60s =========================
+========================= 3 passed, 1 warning in 0.54s =========================
 ```
 
 </details>
