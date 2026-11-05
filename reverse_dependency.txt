@@ -435,10 +435,10 @@ build==1.2.1
 │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── nab-project==0.0.23 [requires: build>=1.2]
-│   ├── nab==0.0.23 [requires: nab-project==0.0.23]
-│   │   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-│   └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
+├── nab-project==0.0.26 [requires: build>=1.2]
+│   ├── nab==0.0.26 [requires: nab-project==0.0.26]
+│   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+│   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
 └── pip-tools==7.6.2 [requires: build>=1.0.0]
 
 === cachetools ===
@@ -992,7 +992,7 @@ GitPython==3.2.1
     └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 
 === graphql-core ===
-graphql-core==3.3.0
+graphql-core==3.3.1
 └── strawberry-graphql==0.334.1 [requires: graphql-core>=3.3.0,<3.4.0]
     └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 
@@ -1884,7 +1884,7 @@ notebook_shim==0.2.4
 └── notebook==7.6.3 [requires: notebook_shim>=0.2,<0.3]
 
 === numpy ===
-numpy==1.26.4
+numpy==2.4.4
 ├── blis==1.3.3 [requires: numpy>=1.19.0,<3.0.0]
 │   └── thinc==8.3.8 [requires: blis>=1.3.0,<1.4.0]
 │       └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
@@ -1913,7 +1913,7 @@ numpy==1.26.4
 └── thinc==8.3.8 [requires: numpy>=1.19.0,<3.0.0] (*)
 
 === oauthlib ===
-oauthlib==4.0.0
+oauthlib==4.0.1
 └── requests-oauthlib==2.0.0 [requires: oauthlib>=3.0.0]
     └── msrest==0.7.1 [requires: requests-oauthlib>=0.5.0]
         ├── azure-monitor-opentelemetry-exporter==1.0.0b58 [requires: msrest>=0.6.10]
@@ -2234,10 +2234,10 @@ packaging==25.0
 │   │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-│   ├── nab-project==0.0.23 [requires: build>=1.2]
-│   │   ├── nab==0.0.23 [requires: nab-project==0.0.23]
-│   │   │   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-│   │   └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
+│   ├── nab-project==0.0.26 [requires: build>=1.2]
+│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26]
+│   │   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
 │   └── pip-tools==7.6.2 [requires: build>=1.0.0]
 ├── ipykernel==6.30.1 [requires: packaging>=22]
 │   └── jupyterlab==4.6.4 [requires: ipykernel>=6.5.0,!=6.30.0]
@@ -2265,11 +2265,11 @@ packaging==25.0
 │       └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
 ├── matplotlib==3.9.4 [requires: packaging>=20.0]
 │   └── seaborn==0.13.2 [requires: matplotlib>=3.4,!=3.6.1]
-├── nab-index==0.0.23 [requires: packaging>=24.0]
-│   ├── nab==0.0.23 [requires: nab-index==0.0.23] (*)
-│   ├── nab-project==0.0.23 [requires: nab-index==0.0.23] (*)
-│   └── pipdeptree==4.2.13 [requires: nab-index>=0.0.19]
-├── nab-project==0.0.23 [requires: packaging>=24.0] (*)
+├── nab-index==0.0.26 [requires: packaging>=24.0]
+│   ├── nab==0.0.26 [requires: nab-index==0.0.26] (*)
+│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26] (*)
+│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
+├── nab-project==0.0.26 [requires: packaging>=24.0] (*)
 ├── nbconvert==7.17.2 [requires: packaging]
 │   └── jupyter_server==2.21.1 [requires: nbconvert>=6.4.4] (*)
 ├── opentelemetry-instrumentation==0.66b1 [requires: packaging>=18.0]
@@ -2541,7 +2541,7 @@ pure_eval==0.2.3
         └── kedro-viz==11.1.0 [requires: ipython>=7.0.0,<9.0]
 
 === pyarrow ===
-pyarrow==24.0.0
+pyarrow==26.0.0
 ├── azureml-dataprep==5.1.6 [requires: pyarrow>=0.17.0, extra: parquet]
 │   └── mltable==1.6.3 [requires: azureml-dataprep>=5.1.0a0,<5.5.0a0]
 ├── kedro-azureml==1.0.0 [requires: pyarrow>=11.0.0]
@@ -2719,12 +2719,12 @@ pyproject_hooks==1.2.0
 │   │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-│   ├── nab-project==0.0.23 [requires: build>=1.2]
-│   │   ├── nab==0.0.23 [requires: nab-project==0.0.23]
-│   │   │   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-│   │   └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
+│   ├── nab-project==0.0.26 [requires: build>=1.2]
+│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26]
+│   │   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
 │   └── pip-tools==7.6.2 [requires: build>=1.0.0]
-├── nab-project==0.0.23 [requires: pyproject_hooks>=1.2] (*)
+├── nab-project==0.0.26 [requires: pyproject_hooks>=1.2] (*)
 └── pip-tools==7.6.2 [requires: pyproject_hooks]
 
 === pysocks ===
@@ -3425,11 +3425,11 @@ tinycss2==1.4.0
 
 === tomli ===
 tomli==2.2.1
-├── nab==0.0.23 [requires: tomli>=2.2]
-│   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-└── nab-project==0.0.23 [requires: tomli>=2.2]
-    ├── nab==0.0.23 [requires: nab-project==0.0.23] (*)
-    └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
+├── nab==0.0.26 [requires: tomli>=2.2]
+│   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+└── nab-project==0.0.26 [requires: tomli>=2.2]
+    ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
+    └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
 
 === tomli-w ===
 tomli_w==1.2.0
@@ -3444,11 +3444,7 @@ tomli_w==1.2.0
 │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── kedro-telemetry==0.7.0 [requires: tomli_w] (*)
-└── nab-project==0.0.23 [requires: tomli_w>=1.2]
-    ├── nab==0.0.23 [requires: nab-project==0.0.23]
-    │   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-    └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
+└── kedro-telemetry==0.7.0 [requires: tomli_w] (*)
 
 === tornado ===
 tornado==6.6
@@ -3670,19 +3666,19 @@ typing_extensions==4.16.0
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 ├── litestar==2.24.0 [requires: typing_extensions] (*)
-├── nab==0.0.23 [requires: typing_extensions>=4.6]
-│   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-├── nab-index==0.0.23 [requires: typing_extensions>=4.6]
-│   ├── nab==0.0.23 [requires: nab-index==0.0.23] (*)
-│   ├── nab-project==0.0.23 [requires: nab-index==0.0.23]
-│   │   ├── nab==0.0.23 [requires: nab-project==0.0.23] (*)
-│   │   └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
-│   └── pipdeptree==4.2.13 [requires: nab-index>=0.0.19]
-├── nab-project==0.0.23 [requires: typing_extensions>=4.6] (*)
-├── nab-provider==0.0.23 [requires: typing_extensions>=4.6]
-│   ├── nab==0.0.23 [requires: nab-provider==0.0.23] (*)
-│   ├── nab-index==0.0.23 [requires: nab-provider==0.0.23] (*)
-│   └── nab-project==0.0.23 [requires: nab-provider==0.0.23] (*)
+├── nab==0.0.26 [requires: typing_extensions>=4.6]
+│   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+├── nab-index==0.0.26 [requires: typing_extensions>=4.6]
+│   ├── nab==0.0.26 [requires: nab-index==0.0.26] (*)
+│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26]
+│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
+│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
+│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
+├── nab-project==0.0.26 [requires: typing_extensions>=4.6] (*)
+├── nab-provider==0.0.26 [requires: typing_extensions>=4.6]
+│   ├── nab==0.0.26 [requires: nab-provider==0.0.26] (*)
+│   ├── nab-index==0.0.26 [requires: nab-provider==0.0.26] (*)
+│   └── nab-project==0.0.26 [requires: nab-provider==0.0.26] (*)
 ├── opentelemetry-api==1.45.1 [requires: typing_extensions>=4.5.0]
 │   ├── azure-core-tracing-opentelemetry==1.0.0b13 [requires: opentelemetry-api>=1.12.0] (*)
 │   ├── azure-monitor-opentelemetry-exporter==1.0.0b58 [requires: opentelemetry-api~=1.45.0] (*)
@@ -3837,13 +3833,13 @@ uri-template==1.3.0
 
 === urllib3 ===
 urllib3==2.8.0
-├── nab-index==0.0.23 [requires: urllib3>=2.0]
-│   ├── nab==0.0.23 [requires: nab-index==0.0.23]
-│   │   └── pipdeptree==4.2.13 [requires: nab>=0.0.19]
-│   ├── nab-project==0.0.23 [requires: nab-index==0.0.23]
-│   │   ├── nab==0.0.23 [requires: nab-project==0.0.23] (*)
-│   │   └── pipdeptree==4.2.13 [requires: nab-project>=0.0.19]
-│   └── pipdeptree==4.2.13 [requires: nab-index>=0.0.19]
+├── nab-index==0.0.26 [requires: urllib3>=2.0]
+│   ├── nab==0.0.26 [requires: nab-index==0.0.26]
+│   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
+│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26]
+│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
+│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
+│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
 └── requests==2.33.0 [requires: urllib3>=1.26,<3]
     ├── azure-core==1.38.0 [requires: requests>=2.21.0]
     │   ├── adlfs==2023.10.0 [requires: azure-core>=1.23.1,<2.0.0]
