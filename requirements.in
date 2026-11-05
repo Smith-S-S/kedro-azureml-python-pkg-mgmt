@@ -2,7 +2,7 @@
 # Base Libraries (no upstream dependency/ have cyclic dependency on each other)
 ################################################################################ 
 ## Data Processing/ Models Processing   
-numpy==2.0.0
+numpy==2.4.3
 pandas==2.3.2
 scikit-learn==1.7.1 
 joblib==1.5.2
