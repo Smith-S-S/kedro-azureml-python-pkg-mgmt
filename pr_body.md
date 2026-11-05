@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit e20dd5fa1b30faee48a7282be427e72b47e17ae8.
+Automated update to requirements files following changes to `requirements.in` in commit fa442e7cdaca5008eb540b11280aa413ff1de0df.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -70,7 +70,7 @@ tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
     @pytest.yield_fixture
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 3 passed, 1 warning in 0.43s =========================
+========================= 3 passed, 1 warning in 0.65s =========================
 ```
 
 </details>
