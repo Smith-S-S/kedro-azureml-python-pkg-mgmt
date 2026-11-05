@@ -2,7 +2,7 @@
 # Base Libraries (no upstream dependency/ have cyclic dependency on each other)
 ################################################################################ 
 ## Data Processing/ Models Processing   
-numpy==1.26.4 
+numpy==2.4.4 
 pandas==2.3.2
 scikit-learn==1.7.1 
 joblib==1.5.2
@@ -184,7 +184,7 @@ plotly==6.3.0
     # Interactive graphing library for Python
 preshed==3.0.9
     # Cython hash table maps (used by spaCy)
-pyarrow==24.0.0
+pyarrow==26.0.0
     # Python library for Apache Arrow (high-performance data memory format)
 pytz==2025.2
     # Brings the Olson tz database into Python
@@ -216,7 +216,7 @@ dnspython==2.9.0
     # DNS toolkit for Python
 fqdn==1.5.1
     # Validate Fully Qualified Domain Names (FQDNs)
-graphql-core==3.3.0
+graphql-core==3.3.1
     # Core implementation of GraphQL for Python
 h11==0.16.0
     # A pure-Python, bring-your-own-I/O implementation of HTTP/1.1
@@ -516,7 +516,7 @@ cryptography==50.0.0
     # Recipes and primitives for cryptography
 defusedxml==0.7.1
     # XML parsers that prevent XML bomb and DTD attacks
-oauthlib==4.0.0
+oauthlib==4.0.1
     # Generic, spec-compliant implementation of OAuth
 pyjwt==2.15.1
     # JSON Web Token implementation in Python
