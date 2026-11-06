@@ -1884,7 +1884,7 @@ notebook_shim==0.2.4
 └── notebook==7.6.3 [requires: notebook_shim>=0.2,<0.3]
 
 === numpy ===
-numpy==2.2.3
+numpy==1.26.4
 ├── blis==1.3.3 [requires: numpy>=1.19.0,<3.0.0]
 │   └── thinc==8.3.8 [requires: blis>=1.3.0,<1.4.0]
 │       └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
@@ -2541,7 +2541,7 @@ pure_eval==0.2.3
         └── kedro-viz==11.1.0 [requires: ipython>=7.0.0,<9.0]
 
 === pyarrow ===
-pyarrow==26.0.0
+pyarrow==24.0.0
 ├── azureml-dataprep==5.1.6 [requires: pyarrow>=0.17.0, extra: parquet]
 │   └── mltable==1.6.3 [requires: azureml-dataprep>=5.1.0a0,<5.5.0a0]
 ├── kedro-azureml==1.0.0 [requires: pyarrow>=11.0.0]

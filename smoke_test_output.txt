@@ -16,4 +16,4 @@ tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
     @pytest.yield_fixture
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 3 passed, 1 warning in 0.53s =========================
+========================= 3 passed, 1 warning in 0.54s =========================
