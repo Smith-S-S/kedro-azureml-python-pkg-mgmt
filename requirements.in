@@ -2,7 +2,7 @@
 # Base Libraries (no upstream dependency/ have cyclic dependency on each other)
 ################################################################################ 
 ## Data Processing/ Models Processing   
-numpy==1.26.4
+numpy==2.2.3
 pandas==2.3.2
 scikit-learn==1.7.1 
 joblib==1.5.2
@@ -34,7 +34,7 @@ kedro-viz==11.1.0
 
 ## Other MLOps Utilities
 omegaconf==2.3.0
-evidently==0.4.16
+evidently==0.5.0
 
 ## NLP tools
 spacy==3.8.2
@@ -184,7 +184,7 @@ plotly==6.3.0
     # Interactive graphing library for Python
 preshed==3.0.9
     # Cython hash table maps (used by spaCy)
-pyarrow==24.0.0
+pyarrow==26.0.0
     # Python library for Apache Arrow (high-performance data memory format)
 pytz==2025.2
     # Brings the Olson tz database into Python
