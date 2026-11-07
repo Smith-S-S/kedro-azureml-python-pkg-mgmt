@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit 08bac19b1d1f2f1d894c9fb9e2b89a3eecdcd414.
+Automated update to requirements files following changes to `requirements.in` in commit d0167d919f22da80da58500ed72f27cf20af61c8.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,15 +32,10 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-8 package(s) resolved by pip-compile are not listed in requirements.in:
-  - deprecation
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
   - opentelemetry-instrumentation-httpx
   - opentelemetry-instrumentation-logging
-  - opentelemetry-proto
-  - protobuf
-  - ujson
-  - uuid6
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
@@ -75,7 +70,7 @@ tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
     @pytest.yield_fixture
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 3 passed, 1 warning in 0.44s =========================
+========================= 3 passed, 1 warning in 0.54s =========================
 ```
 
 </details>
