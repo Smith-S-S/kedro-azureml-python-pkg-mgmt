@@ -37,7 +37,7 @@ annotated-types==0.7.0
     │   │   └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
     │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
     │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
-    ├── evidently==0.7.23 [requires: pydantic>=1.10.16]
+    ├── evidently==0.7.21 [requires: pydantic>=1.10.16]
     ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
     │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
     │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
@@ -72,7 +72,7 @@ anyio==4.15.1
 │   ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 │   └── litestar==2.24.0 [requires: httpx>=0.22]
-│       └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│       └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── jupyter_server==2.21.1 [requires: anyio>=3.1.0]
 │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
 │   │   └── jupyterlab==4.6.4 [requires: jupyter-lsp>=2.0.0] (*)
@@ -92,14 +92,14 @@ anyio==4.15.1
 └── watchfiles==0.24.0 [requires: anyio>=3.0.0]
     ├── kedro-viz==11.1.0 [requires: watchfiles>=0.24.0]
     └── uvicorn==0.35.0 [requires: watchfiles>=0.13, extra: standard]
-        ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+        ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
         ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
         └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
 === appdirs ===
 appdirs==1.4.4
 ├── iterative-telemetry==0.0.8 [requires: appdirs]
-│   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+│   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 └── kedro-telemetry==0.7.0 [requires: appdirs>=1.4.4]
     ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0]
     │   ├── kedro-azureml==1.0.0 [requires: kedro>=1.0.0,<2.0.0]
@@ -461,13 +461,13 @@ catalogue==2.0.10
 
 === certifi ===
 certifi==2026.10.23
-├── evidently==0.7.23 [requires: certifi>=2024.7.4]
+├── evidently==0.7.21 [requires: certifi>=2024.7.4]
 ├── httpcore==1.0.9 [requires: certifi]
 │   └── httpx==0.28.1 [requires: httpcore==1.*]
 │       ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │       │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 │       └── litestar==2.24.0 [requires: httpx>=0.22]
-│           └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│           └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── httpx==0.28.1 [requires: certifi] (*)
 ├── msrest==0.7.1 [requires: certifi>=2017.4.17]
 │   ├── azure-monitor-opentelemetry-exporter==1.0.0b58 [requires: msrest>=0.6.10]
@@ -516,9 +516,9 @@ certifi==2026.10.23
     │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
     │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── evidently==0.7.23 [requires: requests>=2.32.0]
+    ├── evidently==0.7.21 [requires: requests>=2.32.0]
     ├── iterative-telemetry==0.0.8 [requires: requests]
-    │   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+    │   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
     ├── jupyterlab_server==2.28.0 [requires: requests>=2.31]
     │   ├── jupyterlab==4.6.4 [requires: jupyterlab_server>=2.28.0,<3] (*)
     │   └── notebook==7.6.3 [requires: jupyterlab_server>=2.28.0,<3]
@@ -570,7 +570,7 @@ cffi==2.0.0
     │       └── azure-ai-ml==1.31.0 [requires: azure-storage-file-datalake>=12.2.0] (*)
     ├── azure-storage-file-share==12.26.0 [requires: cryptography>=2.1.4]
     │   └── azure-ai-ml==1.31.0 [requires: azure-storage-file-share] (*)
-    ├── evidently==0.7.23 [requires: cryptography>=43.0.1]
+    ├── evidently==0.7.21 [requires: cryptography>=43.0.1]
     ├── mltable==1.6.3 [requires: cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*]
     ├── msal==1.37.0 [requires: cryptography>=2.5,<51]
     │   ├── azure-datalake-store==0.0.53 [requires: msal>=1.16.0,<2] (*)
@@ -644,9 +644,9 @@ charset-normalizer==3.4.4
     │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
     │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── evidently==0.7.23 [requires: requests>=2.32.0]
+    ├── evidently==0.7.21 [requires: requests>=2.32.0]
     ├── iterative-telemetry==0.0.8 [requires: requests]
-    │   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+    │   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
     ├── jupyterlab_server==2.28.0 [requires: requests>=2.31]
     │   ├── jupyterlab==4.6.4 [requires: jupyterlab_server>=2.28.0,<3]
     │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
@@ -683,20 +683,20 @@ click==8.3.3
 ├── kedro==1.3.0 [requires: click>=8.2] (*)
 ├── kedro_fast_api==0.6.1 [requires: click]
 ├── litestar==2.24.0 [requires: click]
-│   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── nltk==3.10.4 [requires: click]
-│   └── evidently==0.7.23 [requires: nltk>=3.6.7]
+│   └── evidently==0.7.21 [requires: nltk>=3.6.7]
 ├── pip-tools==7.6.2 [requires: click>=8]
 ├── rich-click==1.9.1 [requires: click>=8]
 │   └── litestar==2.24.0 [requires: rich-click] (*)
 ├── typer==0.12.5 [requires: click>=8.0.0]
-│   ├── evidently==0.7.23 [requires: typer>=0.3]
+│   ├── evidently==0.7.21 [requires: typer>=0.3]
 │   ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
 │   ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
 │   └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
 │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 └── uvicorn==0.35.0 [requires: click>=7.0]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     ├── kedro_fast_api==0.6.1 [requires: uvicorn]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
@@ -780,7 +780,7 @@ cryptography==50.0.0
 │       └── azure-ai-ml==1.31.0 [requires: azure-storage-file-datalake>=12.2.0] (*)
 ├── azure-storage-file-share==12.26.0 [requires: cryptography>=2.1.4]
 │   └── azure-ai-ml==1.31.0 [requires: azure-storage-file-share] (*)
-├── evidently==0.7.23 [requires: cryptography>=43.0.1]
+├── evidently==0.7.21 [requires: cryptography>=43.0.1]
 ├── mltable==1.6.3 [requires: cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*]
 ├── msal==1.37.0 [requires: cryptography>=2.5,<51]
 │   ├── azure-datalake-store==0.0.53 [requires: msal>=1.16.0,<2]
@@ -835,16 +835,16 @@ defusedxml==0.7.1
 │           ├── jupyterlab==4.6.4 [requires: notebook_shim>=0.2] (*)
 │           └── notebook==7.6.3 [requires: notebook_shim>=0.2,<0.3]
 └── nltk==3.10.4 [requires: defusedxml]
-    └── evidently==0.7.23 [requires: nltk>=3.6.7]
+    └── evidently==0.7.21 [requires: nltk>=3.6.7]
 
 === deprecation ===
 deprecation==2.1.0
-└── evidently==0.7.23 [requires: deprecation>=2.1.0]
+└── evidently==0.7.21 [requires: deprecation>=2.1.0]
 
 === distro ===
 distro==1.9.0
 └── iterative-telemetry==0.0.8 [requires: distro]
-    └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+    └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 
 === dnspython ===
 dnspython==2.9.0
@@ -852,7 +852,7 @@ dnspython==2.9.0
 
 === dynaconf ===
 dynaconf==3.2.13
-├── evidently==0.7.23 [requires: dynaconf>=3.2.4]
+├── evidently==0.7.21 [requires: dynaconf>=3.2.4]
 └── kedro==1.3.0 [requires: dynaconf>=3.1.2,<4.0]
     ├── kedro-azureml==1.0.0 [requires: kedro>=1.0.0,<2.0.0]
     ├── kedro-boot==0.3.0 [requires: kedro>=1.0.0,<2.0]
@@ -869,7 +869,7 @@ dynaconf==3.2.13
 email_validator==2.2.0
 
 === evidently ===
-evidently==0.7.23
+evidently==0.7.21
 
 === exceptiongroup ===
 exceptiongroup==1.3.0
@@ -887,7 +887,7 @@ executing==2.2.1
 Faker==37.8.0
 └── polyfactory==2.22.2 [requires: Faker>=5.0.0]
     └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
-        └── evidently==0.7.23 [requires: litestar>=2.19.0]
+        └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === fastapi ===
 fastapi==0.136.3
@@ -920,7 +920,7 @@ fastjsonschema==2.21.2
 === filelock ===
 filelock==4.2.4
 └── iterative-telemetry==0.0.8 [requires: filelock]
-    └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+    └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 
 === fonttools ===
 fonttools==4.61.0
@@ -956,7 +956,7 @@ frozenlist==1.8.0
 fsspec==2026.9.0
 ├── adlfs==2023.10.0 [requires: fsspec>=2023.9.0]
 │   └── kedro-azureml==1.0.0 [requires: adlfs>=2022.2.0]
-├── evidently==0.7.23 [requires: fsspec>=2024.9.0]
+├── evidently==0.7.21 [requires: fsspec>=2024.9.0]
 ├── kedro==1.3.0 [requires: fsspec>=2021.4]
 │   ├── kedro-azureml==1.0.0 [requires: kedro>=1.0.0,<2.0.0]
 │   ├── kedro-boot==0.3.0 [requires: kedro>=1.0.0,<2.0]
@@ -1016,9 +1016,9 @@ h11==0.16.0
 │       ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │       │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 │       └── litestar==2.24.0 [requires: httpx>=0.22]
-│           └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│           └── evidently==0.7.21 [requires: litestar>=2.19.0]
 └── uvicorn==0.35.0 [requires: h11>=0.8]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     ├── kedro_fast_api==0.6.1 [requires: uvicorn]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
@@ -1029,12 +1029,12 @@ httpcore==1.0.9
     ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
     │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
     └── litestar==2.24.0 [requires: httpx>=0.22]
-        └── evidently==0.7.23 [requires: litestar>=2.19.0]
+        └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === httptools ===
 httptools==0.6.3
 └── uvicorn==0.35.0 [requires: httptools>=0.6.3, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
@@ -1043,7 +1043,7 @@ httpx==0.28.1
 ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 └── litestar==2.24.0 [requires: httpx>=0.22]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === idna ===
 idna==3.16
@@ -1052,7 +1052,7 @@ idna==3.16
 │   │   ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │   │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 │   │   └── litestar==2.24.0 [requires: httpx>=0.22]
-│   │       └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   │       └── evidently==0.7.21 [requires: litestar>=2.19.0]
 │   ├── jupyter_server==2.21.1 [requires: anyio>=3.1.0]
 │   │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
 │   │   │   └── jupyterlab==4.6.4 [requires: jupyter-lsp>=2.0.0] (*)
@@ -1072,7 +1072,7 @@ idna==3.16
 │   └── watchfiles==0.24.0 [requires: anyio>=3.0.0]
 │       ├── kedro-viz==11.1.0 [requires: watchfiles>=0.24.0]
 │       └── uvicorn==0.35.0 [requires: watchfiles>=0.13, extra: standard]
-│           ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+│           ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
 │           ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
 │           └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 ├── email_validator==2.2.0 [requires: idna>=2.0.0]
@@ -1126,9 +1126,9 @@ idna==3.16
 │   │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-│   ├── evidently==0.7.23 [requires: requests>=2.32.0]
+│   ├── evidently==0.7.21 [requires: requests>=2.32.0]
 │   ├── iterative-telemetry==0.0.8 [requires: requests]
-│   │   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+│   │   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 │   ├── jupyterlab_server==2.28.0 [requires: requests>=2.31] (*)
 │   ├── kedro-telemetry==0.7.0 [requires: requests~=2.20] (*)
 │   ├── msal==1.37.0 [requires: requests>=2.0.0,<3]
@@ -1205,7 +1205,7 @@ isoduration==20.11.0
 
 === iterative-telemetry ===
 iterative-telemetry==0.0.8
-└── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+└── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 
 === jedi ===
 jedi==0.19.2
@@ -1250,9 +1250,9 @@ Jinja2==3.1.6
 === joblib ===
 joblib==1.5.2
 ├── nltk==3.10.4 [requires: joblib]
-│   └── evidently==0.7.23 [requires: nltk>=3.6.7]
+│   └── evidently==0.7.21 [requires: nltk>=3.6.7]
 └── scikit-learn==1.7.1 [requires: joblib>=1.2.0]
-    └── evidently==0.7.23 [requires: scikit-learn>=1.1.1]
+    └── evidently==0.7.21 [requires: scikit-learn>=1.1.1]
 
 === json5 ===
 json5==0.12.1
@@ -1589,12 +1589,12 @@ lazy_loader==0.4
 
 === litestar ===
 litestar==2.24.0
-└── evidently==0.7.23 [requires: litestar>=2.19.0]
+└── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === litestar-htmx ===
 litestar-htmx==0.5.0
 └── litestar==2.24.0 [requires: litestar-htmx>=0.4.0]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === marisa-trie ===
 marisa-trie==1.2.0
@@ -1617,14 +1617,14 @@ markdown-it-py==4.0.0
     │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
     │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── evidently==0.7.23 [requires: rich>=13]
+    ├── evidently==0.7.21 [requires: rich>=13]
     ├── kedro==1.3.0 [requires: rich>=12.0,<15.0] (*)
     ├── litestar==2.24.0 [requires: rich>=13.0.0]
-    │   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    │   └── evidently==0.7.21 [requires: litestar>=2.19.0]
     ├── rich-click==1.9.1 [requires: rich>=12]
     │   └── litestar==2.24.0 [requires: rich-click] (*)
     └── typer==0.12.5 [requires: rich>=10.11.0]
-        ├── evidently==0.7.23 [requires: typer>=0.3]
+        ├── evidently==0.7.21 [requires: typer>=0.3]
         ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
         ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
         └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -1698,14 +1698,14 @@ mdurl==0.1.2
         │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
         │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
         │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-        ├── evidently==0.7.23 [requires: rich>=13]
+        ├── evidently==0.7.21 [requires: rich>=13]
         ├── kedro==1.3.0 [requires: rich>=12.0,<15.0] (*)
         ├── litestar==2.24.0 [requires: rich>=13.0.0]
-        │   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+        │   └── evidently==0.7.21 [requires: litestar>=2.19.0]
         ├── rich-click==1.9.1 [requires: rich>=12]
         │   └── litestar==2.24.0 [requires: rich-click] (*)
         └── typer==0.12.5 [requires: rich>=10.11.0]
-            ├── evidently==0.7.23 [requires: typer>=0.3]
+            ├── evidently==0.7.21 [requires: typer>=0.3]
             ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
             ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
             └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -1775,7 +1775,7 @@ msal-extensions==1.3.1
 === msgspec ===
 msgspec==0.19.0
 └── litestar==2.24.0 [requires: msgspec>=0.18.2]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === msrest ===
 msrest==0.7.1
@@ -1791,14 +1791,14 @@ multidict==6.9.1
 │   └── adlfs==2023.10.0 [requires: aiohttp>=3.7.0]
 │       └── kedro-azureml==1.0.0 [requires: adlfs>=2022.2.0]
 ├── litestar==2.24.0 [requires: multidict>=6.0.2]
-│   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   └── evidently==0.7.21 [requires: litestar>=2.19.0]
 └── yarl==1.25.1 [requires: multidict>=4.0]
     └── aiohttp==3.14.5 [requires: yarl>=1.25.1,<2.0] (*)
 
 === multipart ===
 multipart==1.3.1
 └── litestar==2.24.0 [requires: multipart>=1.2.0]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === murmurhash ===
 murmurhash==1.0.10
@@ -1812,7 +1812,7 @@ murmurhash==1.0.10
 === mypy-extensions ===
 mypy_extensions==1.1.0
 └── typing-inspect==0.9.0 [requires: mypy_extensions>=0.3.0]
-    └── evidently==0.7.23 [requires: typing-inspect>=0.9.0]
+    └── evidently==0.7.21 [requires: typing-inspect>=0.9.0]
 
 === narwhals ===
 narwhals==2.15.0
@@ -1879,7 +1879,7 @@ networkx==3.5
 
 === nltk ===
 nltk==3.10.4
-└── evidently==0.7.23 [requires: nltk>=3.6.7]
+└── evidently==0.7.21 [requires: nltk>=3.6.7]
 
 === notebook ===
 notebook==7.6.3
@@ -1898,20 +1898,20 @@ numpy==2.2.3
 ├── contourpy==1.3.0 [requires: numpy>=1.23]
 │   └── matplotlib==3.9.4 [requires: contourpy>=1.0.1]
 │       └── seaborn==0.13.2 [requires: matplotlib>=3.4,!=3.6.1]
-├── evidently==0.7.23 [requires: numpy>=1.23.0]
+├── evidently==0.7.21 [requires: numpy>=1.23.0]
 ├── matplotlib==3.9.4 [requires: numpy>=1.23] (*)
 ├── pandas==2.3.2 [requires: numpy>=1.23.2]
-│   ├── evidently==0.7.23 [requires: pandas>=1.3.5]
+│   ├── evidently==0.7.21 [requires: pandas>=1.3.5]
 │   ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
 │   ├── seaborn==0.13.2 [requires: pandas>=1.2]
 │   └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
-│       └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+│       └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 ├── patsy==0.5.6 [requires: numpy>=1.4]
 │   └── statsmodels==0.14.4 [requires: patsy>=0.5.6] (*)
 ├── scikit-learn==1.7.1 [requires: numpy>=1.22.0]
-│   └── evidently==0.7.23 [requires: scikit-learn>=1.1.1]
+│   └── evidently==0.7.21 [requires: scikit-learn>=1.1.1]
 ├── scipy==1.16.1 [requires: numpy>=1.25.2,<2.6]
-│   ├── evidently==0.7.23 [requires: scipy>=1.10.0]
+│   ├── evidently==0.7.21 [requires: scipy>=1.10.0]
 │   ├── scikit-learn==1.7.1 [requires: scipy>=1.8.0] (*)
 │   └── statsmodels==0.14.4 [requires: scipy>=1.8,!=1.9.2] (*)
 ├── seaborn==0.13.2 [requires: numpy>=1.20,!=1.24.0]
@@ -2121,7 +2121,7 @@ opentelemetry-instrumentation-wsgi==0.66b1
 
 === opentelemetry-proto ===
 opentelemetry-proto==1.45.2
-└── evidently==0.7.23 [requires: opentelemetry-proto>=1.25.0]
+└── evidently==0.7.21 [requires: opentelemetry-proto>=1.25.0]
 
 === opentelemetry-resource-detector-azure ===
 opentelemetry-resource-detector-azure==0.3.0
@@ -2251,7 +2251,7 @@ packaging==25.0
 │   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
 │   └── pip-tools==7.6.2 [requires: build>=1.0.0]
 ├── deprecation==2.1.0 [requires: packaging]
-│   └── evidently==0.7.23 [requires: deprecation>=2.1.0]
+│   └── evidently==0.7.21 [requires: deprecation>=2.1.0]
 ├── ipykernel==6.30.1 [requires: packaging>=22]
 │   └── jupyterlab==4.6.4 [requires: ipykernel>=6.5.0,!=6.30.0]
 │       └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
@@ -2316,7 +2316,7 @@ packaging==25.0
 │       └── azure-monitor-opentelemetry==1.8.11 [requires: opentelemetry-resource-detector-azure>=0.3.0,<1.0.0] (*)
 ├── opentelemetry-instrumentation-flask==0.66b1 [requires: packaging>=21.0] (*)
 ├── plotly==5.24.1 [requires: packaging]
-│   ├── evidently==0.7.23 [requires: plotly>=5.10.0,<6]
+│   ├── evidently==0.7.21 [requires: plotly>=5.10.0,<6]
 │   └── kedro-viz==11.1.0 [requires: plotly>=4.0]
 ├── pytest==9.0.3 [requires: packaging>=22]
 │   ├── pytest-cov==6.3.0 [requires: pytest>=6.2.5]
@@ -2325,7 +2325,7 @@ packaging==25.0
 │   └── rope==1.13.0 [requires: pytoolconfig>=1.2.2]
 ├── spacy==3.8.2 [requires: packaging>=20.0]
 ├── statsmodels==0.14.4 [requires: packaging>=21.3]
-│   └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+│   └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 ├── strawberry-graphql==0.334.1 [requires: packaging>=23]
 │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 ├── thinc==8.3.8 [requires: packaging>=20.0]
@@ -2337,11 +2337,11 @@ packaging==25.0
 
 === pandas ===
 pandas==2.3.2
-├── evidently==0.7.23 [requires: pandas>=1.3.5]
+├── evidently==0.7.21 [requires: pandas>=1.3.5]
 ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
 ├── seaborn==0.13.2 [requires: pandas>=1.2]
 └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
-    └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+    └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === pandocfilters ===
 pandocfilters==1.5.1
@@ -2389,7 +2389,7 @@ pathspec==0.12.1
 === patsy ===
 patsy==0.5.6
 └── statsmodels==0.14.4 [requires: patsy>=0.5.6]
-    └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+    └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === pexpect ===
 pexpect==4.9.0
@@ -2442,7 +2442,7 @@ platformdirs==4.5.0
 
 === plotly ===
 plotly==5.24.1
-├── evidently==0.7.23 [requires: plotly>=5.10.0,<6]
+├── evidently==0.7.21 [requires: plotly>=5.10.0,<6]
 └── kedro-viz==11.1.0 [requires: plotly>=4.0]
 
 === pluggy ===
@@ -2466,7 +2466,7 @@ pluggy==1.6.0
 === polyfactory ===
 polyfactory==2.22.2
 └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === portalocker ===
 portalocker==2.10.1
@@ -2514,7 +2514,7 @@ propcache==0.4.1
 === protobuf ===
 protobuf==7.36.2
 └── opentelemetry-proto==1.45.2 [requires: protobuf>=5.0,<8.0]
-    └── evidently==0.7.23 [requires: opentelemetry-proto>=1.25.0]
+    └── evidently==0.7.21 [requires: opentelemetry-proto>=1.25.0]
 
 === psutil ===
 psutil==7.1.0
@@ -2564,7 +2564,7 @@ pyarrow==26.0.0
 │   └── mltable==1.6.3 [requires: azureml-dataprep>=5.1.0a0,<5.5.0a0]
 ├── kedro-azureml==1.0.0 [requires: pyarrow>=11.0.0]
 └── pandas==2.3.2 [requires: pyarrow>=10.0.1, extra: parquet]
-    └── evidently==0.7.23 [requires: pandas>=1.3.5]
+    └── evidently==0.7.21 [requires: pandas>=1.3.5]
 
 === pycparser ===
 pycparser==2.23
@@ -2602,7 +2602,7 @@ pycparser==2.23
         │       └── azure-ai-ml==1.31.0 [requires: azure-storage-file-datalake>=12.2.0] (*)
         ├── azure-storage-file-share==12.26.0 [requires: cryptography>=2.1.4]
         │   └── azure-ai-ml==1.31.0 [requires: azure-storage-file-share] (*)
-        ├── evidently==0.7.23 [requires: cryptography>=43.0.1]
+        ├── evidently==0.7.21 [requires: cryptography>=43.0.1]
         ├── mltable==1.6.3 [requires: cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*]
         ├── msal==1.37.0 [requires: cryptography>=2.5,<51]
         │   ├── azure-datalake-store==0.0.53 [requires: msal>=1.16.0,<2] (*)
@@ -2619,7 +2619,7 @@ pydantic==2.10.6
 │   │   └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
 │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
 │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
-├── evidently==0.7.23 [requires: pydantic>=1.10.16]
+├── evidently==0.7.21 [requires: pydantic>=1.10.16]
 ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
 │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
 │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
@@ -2637,7 +2637,7 @@ pydantic_core==2.27.2
     │   │   └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
     │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
     │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
-    ├── evidently==0.7.23 [requires: pydantic>=1.10.16]
+    ├── evidently==0.7.21 [requires: pydantic>=1.10.16]
     ├── fastapi==0.136.3 [requires: pydantic>=2.9.0]
     │   ├── kedro_fast_api==0.6.1 [requires: fastapi]
     │   └── kedro-viz==11.1.0 [requires: fastapi>=0.100.0,<0.200.0]
@@ -2687,14 +2687,14 @@ Pygments==2.20.0
     │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
     │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── evidently==0.7.23 [requires: rich>=13]
+    ├── evidently==0.7.21 [requires: rich>=13]
     ├── kedro==1.3.0 [requires: rich>=12.0,<15.0] (*)
     ├── litestar==2.24.0 [requires: rich>=13.0.0]
-    │   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    │   └── evidently==0.7.21 [requires: litestar>=2.19.0]
     ├── rich-click==1.9.1 [requires: rich>=12]
     │   └── litestar==2.24.0 [requires: rich-click] (*)
     └── typer==0.12.5 [requires: rich>=10.11.0]
-        ├── evidently==0.7.23 [requires: typer>=0.3]
+        ├── evidently==0.7.21 [requires: typer>=0.3]
         ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
         ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
         └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -2801,11 +2801,11 @@ python-dateutil==2.9.0.post0
 │   └── seaborn==0.13.2 [requires: matplotlib>=3.4,!=3.6.1]
 ├── mltable==1.6.3 [requires: python-dateutil>=2.7.3,<3.0.0]
 ├── pandas==2.3.2 [requires: python-dateutil>=2.8.2]
-│   ├── evidently==0.7.23 [requires: pandas>=1.3.5]
+│   ├── evidently==0.7.21 [requires: pandas>=1.3.5]
 │   ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
 │   ├── seaborn==0.13.2 [requires: pandas>=1.2]
 │   └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
-│       └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+│       └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 ├── strawberry-graphql==0.334.1 [requires: python-dateutil>=2.7]
 │   └── kedro-viz==11.1.0 [requires: strawberry-graphql>=0.192.0,<1.0]
 └── strictyaml==1.7.3 [requires: python-dateutil>=2.6.0]
@@ -2815,7 +2815,7 @@ python-dateutil==2.9.0.post0
 === python-dotenv ===
 python-dotenv==1.2.2
 └── uvicorn==0.35.0 [requires: python-dotenv>=0.13, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
@@ -2861,11 +2861,11 @@ pytoolconfig==1.3.1
 pytz==2025.2
 ├── mltable==1.6.3 [requires: pytz]
 └── pandas==2.3.2 [requires: pytz>=2020.1]
-    ├── evidently==0.7.23 [requires: pandas>=1.3.5]
+    ├── evidently==0.7.21 [requires: pandas>=1.3.5]
     ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
     ├── seaborn==0.13.2 [requires: pandas>=1.2]
     └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
-        └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+        └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === pyyaml ===
 PyYAML==6.0.3
@@ -2885,7 +2885,7 @@ PyYAML==6.0.3
 │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── evidently==0.7.23 [requires: PyYAML>=6.0.1]
+├── evidently==0.7.21 [requires: PyYAML>=6.0.1]
 ├── jupyter-events==0.12.0 [requires: PyYAML>=5.3]
 │   └── jupyter_server==2.21.1 [requires: jupyter-events>=0.11.0]
 │       ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
@@ -2902,12 +2902,12 @@ PyYAML==6.0.3
 ├── kedro==1.3.0 [requires: PyYAML>=4.2,<7.0] (*)
 ├── kedro_fast_api==0.6.1 [requires: PyYAML]
 ├── litestar==2.24.0 [requires: PyYAML]
-│   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── mltable==1.6.3 [requires: PyYAML>=5.1.0,<7.0.0]
 ├── omegaconf==2.3.0 [requires: PyYAML>=5.1.0]
 │   └── kedro==1.3.0 [requires: omegaconf>=2.1.1] (*)
 └── uvicorn==0.35.0 [requires: PyYAML>=5.1, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
@@ -2969,7 +2969,7 @@ referencing==0.36.2
 === regex ===
 regex==2025.9.18
 └── nltk==3.10.4 [requires: regex>=2021.8.3]
-    └── evidently==0.7.23 [requires: nltk>=3.6.7]
+    └── evidently==0.7.21 [requires: nltk>=3.6.7]
 
 === requests ===
 requests==2.33.0
@@ -3018,9 +3018,9 @@ requests==2.33.0
 │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── evidently==0.7.23 [requires: requests>=2.32.0]
+├── evidently==0.7.21 [requires: requests>=2.32.0]
 ├── iterative-telemetry==0.0.8 [requires: requests]
-│   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+│   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
 ├── jupyterlab_server==2.28.0 [requires: requests>=2.31]
 │   ├── jupyterlab==4.6.4 [requires: jupyterlab_server>=2.28.0,<3]
 │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
@@ -3114,14 +3114,14 @@ rich==14.1.0
 │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── evidently==0.7.23 [requires: rich>=13]
+├── evidently==0.7.21 [requires: rich>=13]
 ├── kedro==1.3.0 [requires: rich>=12.0,<15.0] (*)
 ├── litestar==2.24.0 [requires: rich>=13.0.0]
-│   └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── rich-click==1.9.1 [requires: rich>=12]
 │   └── litestar==2.24.0 [requires: rich-click] (*)
 └── typer==0.12.5 [requires: rich>=10.11.0]
-    ├── evidently==0.7.23 [requires: typer>=0.3]
+    ├── evidently==0.7.21 [requires: typer>=0.3]
     ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
     ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
     └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -3130,7 +3130,7 @@ rich==14.1.0
 === rich-click ===
 rich-click==1.9.1
 └── litestar==2.24.0 [requires: rich-click]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === rope ===
 rope==1.13.0
@@ -3183,15 +3183,15 @@ ruff==0.5.7
 
 === scikit-learn ===
 scikit-learn==1.7.1
-└── evidently==0.7.23 [requires: scikit-learn>=1.1.1]
+└── evidently==0.7.21 [requires: scikit-learn>=1.1.1]
 
 === scipy ===
 scipy==1.16.1
-├── evidently==0.7.23 [requires: scipy>=1.10.0]
+├── evidently==0.7.21 [requires: scipy>=1.10.0]
 ├── scikit-learn==1.7.1 [requires: scipy>=1.8.0]
-│   └── evidently==0.7.23 [requires: scikit-learn>=1.1.1]
+│   └── evidently==0.7.21 [requires: scikit-learn>=1.1.1]
 └── statsmodels==0.14.4 [requires: scipy>=1.8,!=1.9.2]
-    └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+    └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === seaborn ===
 seaborn==0.13.2
@@ -3222,7 +3222,7 @@ Send2Trash==1.8.3
 === shellingham ===
 shellingham==1.5.4
 └── typer==0.12.5 [requires: shellingham>=1.3.0]
-    ├── evidently==0.7.23 [requires: typer>=0.3]
+    ├── evidently==0.7.21 [requires: typer>=0.3]
     ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
     ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
     └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -3232,7 +3232,7 @@ shellingham==1.5.4
 six==1.17.0
 ├── patsy==0.5.6 [requires: six]
 │   └── statsmodels==0.14.4 [requires: patsy>=0.5.6]
-│       └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+│       └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 ├── python-dateutil==2.9.0.post0 [requires: six>=1.5]
 │   ├── arrow==1.3.0 [requires: python-dateutil>=2.7.0]
 │   │   ├── cookiecutter==2.6.0 [requires: arrow]
@@ -3273,7 +3273,7 @@ six==1.17.0
 │   │   └── seaborn==0.13.2 [requires: matplotlib>=3.4,!=3.6.1]
 │   ├── mltable==1.6.3 [requires: python-dateutil>=2.7.3,<3.0.0]
 │   ├── pandas==2.3.2 [requires: python-dateutil>=2.8.2]
-│   │   ├── evidently==0.7.23 [requires: pandas>=1.3.5]
+│   │   ├── evidently==0.7.21 [requires: pandas>=1.3.5]
 │   │   ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
 │   │   ├── seaborn==0.13.2 [requires: pandas>=1.2]
 │   │   └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0] (*)
@@ -3310,7 +3310,7 @@ smmap==5.0.2
 === sniffio ===
 sniffio==1.3.1
 └── litestar==2.24.0 [requires: sniffio>=1.3.1]
-    └── evidently==0.7.23 [requires: litestar>=2.19.0]
+    └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === soupsieve ===
 soupsieve==2.9.2
@@ -3371,7 +3371,7 @@ starlette==1.3.1
 
 === statsmodels ===
 statsmodels==0.14.4
-└── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+└── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === strawberry-graphql ===
 strawberry-graphql==0.334.1
@@ -3385,7 +3385,7 @@ strictyaml==1.7.3
 === tenacity ===
 tenacity==9.1.2
 └── plotly==5.24.1 [requires: tenacity>=6.2.0]
-    ├── evidently==0.7.23 [requires: plotly>=5.10.0,<6]
+    ├── evidently==0.7.21 [requires: plotly>=5.10.0,<6]
     └── kedro-viz==11.1.0 [requires: plotly>=4.0]
 
 === terminado ===
@@ -3428,7 +3428,7 @@ thinc==8.3.8
 === threadpoolctl ===
 threadpoolctl==3.6.0
 └── scikit-learn==1.7.1 [requires: threadpoolctl>=3.1.0]
-    └── evidently==0.7.23 [requires: scikit-learn>=1.1.1]
+    └── evidently==0.7.21 [requires: scikit-learn>=1.1.1]
 
 === tinycss2 ===
 tinycss2==1.4.0
@@ -3504,7 +3504,7 @@ tqdm==4.67.1
 ├── azure-ai-ml==1.31.0 [requires: tqdm<5.0.0]
 │   └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
 ├── nltk==3.10.4 [requires: tqdm]
-│   └── evidently==0.7.23 [requires: nltk>=3.6.7]
+│   └── evidently==0.7.21 [requires: nltk>=3.6.7]
 └── spacy==3.8.2 [requires: tqdm>=4.38.0,<5.0.0]
 
 === traitlets ===
@@ -3559,7 +3559,7 @@ traitlets==5.14.3
 
 === typer ===
 typer==0.12.5
-├── evidently==0.7.23 [requires: typer>=0.3]
+├── evidently==0.7.21 [requires: typer>=0.3]
 ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
 ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
 └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0]
@@ -3608,7 +3608,7 @@ typing_extensions==4.16.0
 │   │   ├── jupyterlab==4.6.4 [requires: httpx>=0.25.0,<1]
 │   │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
 │   │   └── litestar==2.24.0 [requires: httpx>=0.22]
-│   │       └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│   │       └── evidently==0.7.21 [requires: litestar>=2.19.0]
 │   ├── jupyter_server==2.21.1 [requires: anyio>=3.1.0]
 │   │   ├── jupyter-lsp==2.3.0 [requires: jupyter_server>=1.1.2]
 │   │   │   └── jupyterlab==4.6.4 [requires: jupyter-lsp>=2.0.0] (*)
@@ -3628,7 +3628,7 @@ typing_extensions==4.16.0
 │   └── watchfiles==0.24.0 [requires: anyio>=3.0.0]
 │       ├── kedro-viz==11.1.0 [requires: watchfiles>=0.24.0]
 │       └── uvicorn==0.35.0 [requires: watchfiles>=0.13, extra: standard]
-│           ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+│           ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
 │           ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
 │           └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 ├── azure-ai-ml==1.31.0 [requires: typing_extensions<5.0.0]
@@ -3775,7 +3775,7 @@ typing_extensions==4.16.0
 │   │   │   └── spacy==3.8.2 [requires: thinc>=8.3.0,<8.4.0]
 │   │   └── weasel==0.4.1 [requires: confection>=0.0.4,<0.2.0]
 │   │       └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
-│   ├── evidently==0.7.23 [requires: pydantic>=1.10.16]
+│   ├── evidently==0.7.21 [requires: pydantic>=1.10.16]
 │   ├── fastapi==0.136.3 [requires: pydantic>=2.9.0] (*)
 │   ├── kedro-azureml==1.0.0 [requires: pydantic>=2.6.4,<2.11.0]
 │   ├── kedro-viz==11.1.0 [requires: pydantic>=2.0.0]
@@ -3807,18 +3807,18 @@ typing_extensions==4.16.0
 ├── starlette==1.3.1 [requires: typing_extensions>=4.10.0] (*)
 ├── strawberry-graphql==0.334.1 [requires: typing_extensions>=4.14.0] (*)
 ├── typer==0.12.5 [requires: typing_extensions>=3.7.4.3]
-│   ├── evidently==0.7.23 [requires: typer>=0.3]
+│   ├── evidently==0.7.21 [requires: typer>=0.3]
 │   ├── fastapi-cli==0.0.5 [requires: typer>=0.12.3]
 │   ├── spacy==3.8.2 [requires: typer>=0.3.0,<1.0.0]
 │   └── weasel==0.4.1 [requires: typer>=0.3.0,<1.0.0] (*)
 ├── typing-inspect==0.9.0 [requires: typing_extensions>=3.7.4]
-│   └── evidently==0.7.23 [requires: typing-inspect>=0.9.0]
+│   └── evidently==0.7.21 [requires: typing-inspect>=0.9.0]
 └── typing-inspection==0.4.2 [requires: typing_extensions>=4.12.0]
     └── fastapi==0.136.3 [requires: typing-inspection>=0.4.2] (*)
 
 === typing-inspect ===
 typing-inspect==0.9.0
-└── evidently==0.7.23 [requires: typing-inspect>=0.9.0]
+└── evidently==0.7.21 [requires: typing-inspect>=0.9.0]
 
 === typing-inspection ===
 typing-inspection==0.4.2
@@ -3831,17 +3831,17 @@ tzdata==2025.2
 ├── Faker==37.8.0 [requires: tzdata]
 │   └── polyfactory==2.22.2 [requires: Faker>=5.0.0]
 │       └── litestar==2.24.0 [requires: polyfactory>=2.6.3]
-│           └── evidently==0.7.23 [requires: litestar>=2.19.0]
+│           └── evidently==0.7.21 [requires: litestar>=2.19.0]
 └── pandas==2.3.2 [requires: tzdata>=2022.7]
-    ├── evidently==0.7.23 [requires: pandas>=1.3.5]
+    ├── evidently==0.7.21 [requires: pandas>=1.3.5]
     ├── kedro-viz==11.1.0 [requires: pandas>=1.3]
     ├── seaborn==0.13.2 [requires: pandas>=1.2]
     └── statsmodels==0.14.4 [requires: pandas>=1.4,!=2.1.0]
-        └── evidently==0.7.23 [requires: statsmodels>=0.14.0]
+        └── evidently==0.7.21 [requires: statsmodels>=0.14.0]
 
 === ujson ===
 ujson==6.1.0
-└── evidently==0.7.23 [requires: ujson>=5.4.0]
+└── evidently==0.7.21 [requires: ujson>=5.4.0]
 
 === uri-template ===
 uri-template==1.3.0
@@ -3862,7 +3862,7 @@ uri-template==1.3.0
 
 === urllib3 ===
 urllib3==2.8.0
-├── evidently==0.7.23 [requires: urllib3>=1.26.19]
+├── evidently==0.7.21 [requires: urllib3>=1.26.19]
 ├── nab-index==0.0.26 [requires: urllib3>=2.0]
 │   ├── nab==0.0.26 [requires: nab-index==0.0.26]
 │   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
@@ -3916,9 +3916,9 @@ urllib3==2.8.0
     │       │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
     │       │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
     │       └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-    ├── evidently==0.7.23 [requires: requests>=2.32.0]
+    ├── evidently==0.7.21 [requires: requests>=2.32.0]
     ├── iterative-telemetry==0.0.8 [requires: requests]
-    │   └── evidently==0.7.23 [requires: iterative-telemetry>=0.0.5]
+    │   └── evidently==0.7.21 [requires: iterative-telemetry>=0.0.5]
     ├── jupyterlab_server==2.28.0 [requires: requests>=2.31]
     │   ├── jupyterlab==4.6.4 [requires: jupyterlab_server>=2.28.0,<3]
     │   │   └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
@@ -3938,11 +3938,11 @@ urllib3==2.8.0
 
 === uuid6 ===
 uuid6==2025.0.1
-└── evidently==0.7.23 [requires: uuid6>=2024.7.10]
+└── evidently==0.7.21 [requires: uuid6>=2024.7.10]
 
 === uvicorn ===
 uvicorn==0.35.0
-├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
 ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
 ├── kedro_fast_api==0.6.1 [requires: uvicorn]
 └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
@@ -3950,7 +3950,7 @@ uvicorn==0.35.0
 === uvloop ===
 uvloop==0.20.0
 └── uvicorn==0.35.0 [requires: uvloop>=0.15.1, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
@@ -3964,13 +3964,13 @@ wasabi==1.1.3
 
 === watchdog ===
 watchdog==5.0.3
-└── evidently==0.7.23 [requires: watchdog>=3.0.0]
+└── evidently==0.7.21 [requires: watchdog>=3.0.0]
 
 === watchfiles ===
 watchfiles==0.24.0
 ├── kedro-viz==11.1.0 [requires: watchfiles>=0.24.0]
 └── uvicorn==0.35.0 [requires: watchfiles>=0.13, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
@@ -4042,7 +4042,7 @@ websocket-client==1.8.0
 === websockets ===
 websockets==14.2
 └── uvicorn==0.35.0 [requires: websockets>=10.4, extra: standard]
-    ├── evidently==0.7.23 [requires: uvicorn>=0.22.0]
+    ├── evidently==0.7.21 [requires: uvicorn>=0.22.0]
     ├── fastapi-cli==0.0.5 [requires: uvicorn>=0.15.0]
     └── kedro-viz==11.1.0 [requires: uvicorn>=0.30.0,<1.0]
 
