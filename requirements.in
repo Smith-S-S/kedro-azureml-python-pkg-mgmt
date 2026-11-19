@@ -598,7 +598,7 @@ opentelemetry-resource-detector-azure==0.3.0
 # Resource detector for Azure environments
 opentelemetry-sdk==1.45.2
     # The OpenTelemetry Python SDK
-opentelemetry-semantic-conventions==0.66b1
+opentelemetry-semantic-conventions==0.66b2
     # Standard naming conventions for OpenTelemetry attributes
 opentelemetry-util-http==0.66b1
     # HTTP utility functions for OpenTelemetry instrumentation
