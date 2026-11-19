@@ -592,7 +592,7 @@ opentelemetry-instrumentation-urllib==0.66b2
     # Instrumentation for the urllib library
 opentelemetry-instrumentation-urllib3==0.66b2
     # Instrumentation for the urllib3 library
-opentelemetry-instrumentation-wsgi==0.66b1
+opentelemetry-instrumentation-wsgi==0.66b2
     # Instrumentation for WSGI web applications
 opentelemetry-resource-detector-azure==0.3.0
 # Resource detector for Azure environments
