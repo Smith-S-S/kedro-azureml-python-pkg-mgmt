@@ -436,11 +436,11 @@ build==1.2.1
 │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-├── nab-project==0.0.26 [requires: build>=1.2]
-│   ├── nab==0.0.26 [requires: nab-project==0.0.26]
-│   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-│   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
-└── pip-tools==7.6.2 [requires: build>=1.0.0]
+├── nab-project==0.0.30 [requires: build>=1.2]
+│   ├── nab==0.0.30 [requires: nab-project==0.0.30]
+│   │   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+│   └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
+└── pip-tools==7.7.0 [requires: build>=1.0.0]
 
 === cachetools ===
 cachetools==5.5.2
@@ -686,7 +686,7 @@ click==8.3.3
 │   └── evidently==0.7.21 [requires: litestar>=2.19.0]
 ├── nltk==3.10.4 [requires: click]
 │   └── evidently==0.7.21 [requires: nltk>=3.6.7]
-├── pip-tools==7.6.2 [requires: click>=8]
+├── pip-tools==7.7.0 [requires: click>=8]
 ├── rich-click==1.9.1 [requires: click>=8]
 │   └── litestar==2.24.0 [requires: rich-click] (*)
 ├── typer==0.12.5 [requires: click>=8.0.0]
@@ -2245,11 +2245,11 @@ packaging==25.0
 │   │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-│   ├── nab-project==0.0.26 [requires: build>=1.2]
-│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26]
-│   │   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
-│   └── pip-tools==7.6.2 [requires: build>=1.0.0]
+│   ├── nab-project==0.0.30 [requires: build>=1.2]
+│   │   ├── nab==0.0.30 [requires: nab-project==0.0.30]
+│   │   │   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+│   │   └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
+│   └── pip-tools==7.7.0 [requires: build>=1.0.0]
 ├── deprecation==2.1.0 [requires: packaging]
 │   └── evidently==0.7.21 [requires: deprecation>=2.1.0]
 ├── ipykernel==6.30.1 [requires: packaging>=22]
@@ -2278,11 +2278,11 @@ packaging==25.0
 │       └── kedro-azureml==1.0.0 [requires: azure-ai-ml>=1.2.0]
 ├── matplotlib==3.9.4 [requires: packaging>=20.0]
 │   └── seaborn==0.13.2 [requires: matplotlib>=3.4,!=3.6.1]
-├── nab-index==0.0.26 [requires: packaging>=24.0]
-│   ├── nab==0.0.26 [requires: nab-index==0.0.26] (*)
-│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26] (*)
-│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
-├── nab-project==0.0.26 [requires: packaging>=24.0] (*)
+├── nab-index==0.0.30 [requires: packaging>=24.0]
+│   ├── nab==0.0.30 [requires: nab-index==0.0.30] (*)
+│   ├── nab-project==0.0.30 [requires: nab-index==0.0.30] (*)
+│   └── pipdeptree==4.2.15 [requires: nab-index>=0.0.19]
+├── nab-project==0.0.30 [requires: packaging>=24.0] (*)
 ├── nbconvert==7.17.2 [requires: packaging]
 │   └── jupyter_server==2.21.1 [requires: nbconvert>=6.4.4] (*)
 ├── opentelemetry-instrumentation==0.66b1 [requires: packaging>=18.0]
@@ -2333,7 +2333,7 @@ packaging==25.0
 ├── weasel==0.4.1 [requires: packaging>=20.0]
 │   └── spacy==3.8.2 [requires: weasel>=0.1.0,<0.5.0]
 └── wheel==0.46.3 [requires: packaging>=24.0]
-    └── pip-tools==7.6.2 [requires: wheel]
+    └── pip-tools==7.7.0 [requires: wheel]
 
 === pandas ===
 pandas==2.3.2
@@ -2738,13 +2738,13 @@ pyproject_hooks==1.2.0
 │   │   │   ├── kedro==1.3.0 [requires: kedro-telemetry>=0.5.0] (*)
 │   │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
-│   ├── nab-project==0.0.26 [requires: build>=1.2]
-│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26]
-│   │   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
-│   └── pip-tools==7.6.2 [requires: build>=1.0.0]
-├── nab-project==0.0.26 [requires: pyproject_hooks>=1.2] (*)
-└── pip-tools==7.6.2 [requires: pyproject_hooks]
+│   ├── nab-project==0.0.30 [requires: build>=1.2]
+│   │   ├── nab==0.0.30 [requires: nab-project==0.0.30]
+│   │   │   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+│   │   └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
+│   └── pip-tools==7.7.0 [requires: build>=1.0.0]
+├── nab-project==0.0.30 [requires: pyproject_hooks>=1.2] (*)
+└── pip-tools==7.7.0 [requires: pyproject_hooks]
 
 === pysocks ===
 PySocks==1.7.1
@@ -3313,7 +3313,7 @@ sniffio==1.3.1
     └── evidently==0.7.21 [requires: litestar>=2.19.0]
 
 === soupsieve ===
-soupsieve==2.9.2
+soupsieve==4.0.1
 └── beautifulsoup4==4.13.5 [requires: soupsieve>1.2]
     └── nbconvert==7.17.2 [requires: beautifulsoup4]
         └── jupyter_server==2.21.1 [requires: nbconvert>=6.4.4]
@@ -3449,11 +3449,11 @@ tinycss2==1.4.0
 
 === tomli ===
 tomli==2.2.1
-├── nab==0.0.26 [requires: tomli>=2.2]
-│   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-└── nab-project==0.0.26 [requires: tomli>=2.2]
-    ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
-    └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
+├── nab==0.0.30 [requires: tomli>=2.2]
+│   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+└── nab-project==0.0.30 [requires: tomli>=2.2]
+    ├── nab==0.0.30 [requires: nab-project==0.0.30] (*)
+    └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
 
 === tomli-w ===
 tomli_w==1.2.0
@@ -3471,7 +3471,7 @@ tomli_w==1.2.0
 └── kedro-telemetry==0.7.0 [requires: tomli_w] (*)
 
 === tornado ===
-tornado==6.6
+tornado==6.6.1
 ├── ipykernel==6.30.1 [requires: tornado>=6.2]
 │   └── jupyterlab==4.6.4 [requires: ipykernel>=6.5.0,!=6.30.0]
 │       └── notebook==7.6.3 [requires: jupyterlab>=4.6.4,<4.7]
@@ -3691,19 +3691,19 @@ typing_extensions==4.16.0
 │   │   └── kedro-viz==11.1.0 [requires: kedro-telemetry>=0.6.0]
 │   └── kedro-viz==11.1.0 [requires: kedro>=0.18.0]
 ├── litestar==2.24.0 [requires: typing_extensions] (*)
-├── nab==0.0.26 [requires: typing_extensions>=4.6]
-│   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-├── nab-index==0.0.26 [requires: typing_extensions>=4.6]
-│   ├── nab==0.0.26 [requires: nab-index==0.0.26] (*)
-│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26]
-│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
-│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
-│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
-├── nab-project==0.0.26 [requires: typing_extensions>=4.6] (*)
-├── nab-provider==0.0.26 [requires: typing_extensions>=4.6]
-│   ├── nab==0.0.26 [requires: nab-provider==0.0.26] (*)
-│   ├── nab-index==0.0.26 [requires: nab-provider==0.0.26] (*)
-│   └── nab-project==0.0.26 [requires: nab-provider==0.0.26] (*)
+├── nab==0.0.30 [requires: typing_extensions>=4.6]
+│   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+├── nab-index==0.0.30 [requires: typing_extensions>=4.6]
+│   ├── nab==0.0.30 [requires: nab-index==0.0.30] (*)
+│   ├── nab-project==0.0.30 [requires: nab-index==0.0.30]
+│   │   ├── nab==0.0.30 [requires: nab-project==0.0.30] (*)
+│   │   └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
+│   └── pipdeptree==4.2.15 [requires: nab-index>=0.0.19]
+├── nab-project==0.0.30 [requires: typing_extensions>=4.6] (*)
+├── nab-provider==0.0.30 [requires: typing_extensions>=4.6]
+│   ├── nab==0.0.30 [requires: nab-provider==0.0.30] (*)
+│   ├── nab-index==0.0.30 [requires: nab-provider==0.0.30] (*)
+│   └── nab-project==0.0.30 [requires: nab-provider==0.0.30] (*)
 ├── opentelemetry-api==1.45.1 [requires: typing_extensions>=4.5.0]
 │   ├── azure-core-tracing-opentelemetry==1.0.0b13 [requires: opentelemetry-api>=1.12.0] (*)
 │   ├── azure-monitor-opentelemetry-exporter==1.0.0b58 [requires: opentelemetry-api~=1.45.0] (*)
@@ -3863,13 +3863,13 @@ uri-template==1.3.0
 === urllib3 ===
 urllib3==2.8.0
 ├── evidently==0.7.21 [requires: urllib3>=1.26.19]
-├── nab-index==0.0.26 [requires: urllib3>=2.0]
-│   ├── nab==0.0.26 [requires: nab-index==0.0.26]
-│   │   └── pipdeptree==4.2.14 [requires: nab>=0.0.19]
-│   ├── nab-project==0.0.26 [requires: nab-index==0.0.26]
-│   │   ├── nab==0.0.26 [requires: nab-project==0.0.26] (*)
-│   │   └── pipdeptree==4.2.14 [requires: nab-project>=0.0.19]
-│   └── pipdeptree==4.2.14 [requires: nab-index>=0.0.19]
+├── nab-index==0.0.30 [requires: urllib3>=2.0]
+│   ├── nab==0.0.30 [requires: nab-index==0.0.30]
+│   │   └── pipdeptree==4.2.15 [requires: nab>=0.0.19]
+│   ├── nab-project==0.0.30 [requires: nab-index==0.0.30]
+│   │   ├── nab==0.0.30 [requires: nab-project==0.0.30] (*)
+│   │   └── pipdeptree==4.2.15 [requires: nab-project>=0.0.19]
+│   └── pipdeptree==4.2.15 [requires: nab-index>=0.0.19]
 └── requests==2.33.0 [requires: urllib3>=1.26,<3]
     ├── azure-core==1.38.0 [requires: requests>=2.21.0]
     │   ├── adlfs==2023.10.0 [requires: azure-core>=1.23.1,<2.0.0]
