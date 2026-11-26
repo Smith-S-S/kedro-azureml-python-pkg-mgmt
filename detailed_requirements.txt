@@ -160,7 +160,6 @@ catalogue==2.0.10
     #   thinc
 certifi==2026.10.23
     # via
-    #   evidently
     #   httpcore
     #   httpx
     #   msrest
@@ -224,7 +223,6 @@ cryptography==50.0.0
     #   azure-identity
     #   azure-storage-blob
     #   azure-storage-file-share
-    #   evidently
     #   mltable
     #   msal
     #   pyjwt
@@ -246,8 +244,6 @@ defusedxml==0.7.1
     # via
     #   nbconvert
     #   nltk
-deprecation==2.1.0
-    # via evidently
 distro==1.9.0
     # via
     #   iterative-telemetry
@@ -260,7 +256,7 @@ dynaconf==3.2.13
     #   kedro
 email-validator==2.2.0
     # via -r requirements.in
-evidently==0.7.21
+evidently==0.4.16
     # via -r requirements.in
 exceptiongroup==1.3.0
     # via -r requirements.in
@@ -660,8 +656,6 @@ opentelemetry-instrumentation-wsgi==0.66b1
     # via
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
-opentelemetry-proto==1.45.2
-    # via evidently
 opentelemetry-resource-detector-azure==0.3.0
     # via
     #   azure-monitor-opentelemetry
@@ -705,7 +699,6 @@ overrides==7.7.0
 packaging==25.0
     # via
     #   build
-    #   deprecation
     #   ipykernel
     #   jupyter-events
     #   jupyter-server
@@ -787,8 +780,6 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-protobuf==7.36.2
-    # via opentelemetry-proto
 psutil==7.1.0
     # via
     #   azure-monitor-opentelemetry-exporter
@@ -1132,17 +1123,12 @@ tzdata==2025.2
     # via
     #   faker
     #   pandas
-ujson==6.1.0
-    # via evidently
 uri-template==1.3.0
     # via
     #   jsonschema
 urllib3==2.8.0
     # via
-    #   evidently
     #   requests
-uuid6==2025.0.1
-    # via evidently
 uvicorn[standard]==0.35.0
     # via
     #   evidently

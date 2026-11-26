@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit e2406d61aeee1b106db70f81d3b55d72d7628539.
+Automated update to requirements files following changes to `requirements.in` in commit b914c2a0e27b151ed4186583bfaa5c406d2b9af2.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,15 +32,10 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-8 package(s) resolved by pip-compile are not listed in requirements.in:
-  - deprecation
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
   - opentelemetry-instrumentation-httpx
   - opentelemetry-instrumentation-logging
-  - opentelemetry-proto
-  - protobuf
-  - ujson
-  - uuid6
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
@@ -61,7 +56,7 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: anyio-4.15.1, mock-2.0.0, Faker-37.8.0, cov-6.3.0
+plugins: mock-2.0.0, Faker-37.8.0, anyio-4.15.1, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
@@ -75,7 +70,7 @@ tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
     @pytest.yield_fixture
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 3 passed, 1 warning in 0.60s =========================
+========================= 3 passed, 1 warning in 0.47s =========================
 ```
 
 </details>
