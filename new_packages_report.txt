@@ -1,11 +1,6 @@
-8 package(s) resolved by pip-compile are not listed in requirements.in:
-  - deprecation
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
   - opentelemetry-instrumentation-httpx
   - opentelemetry-instrumentation-logging
-  - opentelemetry-proto
-  - protobuf
-  - ujson
-  - uuid6
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
