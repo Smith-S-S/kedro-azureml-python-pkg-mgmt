@@ -3284,7 +3284,7 @@ sniffio==1.3.1
     └── evidently==0.4.16 [requires: litestar>=2.5.1]
 
 === soupsieve ===
-soupsieve==4.0.1
+soupsieve==2.9.2
 └── beautifulsoup4==4.13.5 [requires: soupsieve>1.2]
     └── nbconvert==7.17.2 [requires: beautifulsoup4]
         └── jupyter_server==2.21.1 [requires: nbconvert>=6.4.4]
