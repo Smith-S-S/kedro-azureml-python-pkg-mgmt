@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit b914c2a0e27b151ed4186583bfaa5c406d2b9af2.
+Automated update to requirements files following changes to `requirements.in` in commit aad21edaca21737eb965b4a380448d0dbe7c6cc0.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,10 +32,8 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-3 package(s) resolved by pip-compile are not listed in requirements.in:
+1 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
-  - opentelemetry-instrumentation-httpx
-  - opentelemetry-instrumentation-logging
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```

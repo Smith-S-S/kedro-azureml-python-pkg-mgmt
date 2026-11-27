@@ -104,10 +104,10 @@ azure-mgmt-core==1.6.0
     # via
     #   azure-ai-ml
     #   mltable
-azure-monitor-opentelemetry==1.8.11
+azure-monitor-opentelemetry==1.8.12
     # via
     #   azure-ai-ml
-azure-monitor-opentelemetry-exporter==1.0.0b58
+azure-monitor-opentelemetry-exporter==1.0.0b59
     # via
     #   azure-monitor-opentelemetry
 azure-storage-blob==12.27.1
@@ -247,7 +247,7 @@ defusedxml==0.7.1
 distro==1.9.0
     # via
     #   iterative-telemetry
-dnspython==2.9.0
+dnspython==2.9.2
     # via
     #   email-validator
 dynaconf==3.2.13
@@ -300,7 +300,7 @@ gitdb==4.0.12
 gitpython==3.2.1
     # via
     #   kedro
-graphql-core==3.3.1
+graphql-core==3.3.2
     # via
     #   strawberry-graphql
 greenlet==3.2.4
@@ -587,7 +587,7 @@ oauthlib==4.0.1
 omegaconf==2.3.0
     # via
     #   kedro
-opentelemetry-api==1.45.1
+opentelemetry-api==1.45.2
     # via
     #   azure-core-tracing-opentelemetry
     #   azure-monitor-opentelemetry-exporter
@@ -606,7 +606,7 @@ opentelemetry-api==1.45.1
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
-opentelemetry-instrumentation==0.66b1
+opentelemetry-instrumentation==0.66b2
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
@@ -621,50 +621,52 @@ opentelemetry-instrumentation==0.66b1
     #   opentelemetry-instrumentation-urllib3
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-resource-detector-azure
-opentelemetry-instrumentation-asgi==0.66b1
+opentelemetry-instrumentation-asgi==0.66b2
     # via
     #   opentelemetry-instrumentation-fastapi
-opentelemetry-instrumentation-dbapi==0.66b1
+opentelemetry-instrumentation-dbapi==0.66b2
     # via
     #   opentelemetry-instrumentation-psycopg2
-opentelemetry-instrumentation-django==0.66b1
+opentelemetry-instrumentation-django==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-fastapi==0.66b1
+opentelemetry-instrumentation-fastapi==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-flask==0.66b1
+opentelemetry-instrumentation-flask==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-httpx==0.66b1
-    # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-logging==0.66b1
-    # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-psycopg2==0.66b1
+opentelemetry-instrumentation-httpx==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-requests==0.66b1
+opentelemetry-instrumentation-logging==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib==0.66b1
+opentelemetry-instrumentation-psycopg2==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib3==0.66b1
+opentelemetry-instrumentation-requests==0.66b2
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-wsgi==0.66b1
+opentelemetry-instrumentation-urllib==0.66b2
+    # via
+    #   azure-monitor-opentelemetry
+opentelemetry-instrumentation-urllib3==0.66b2
+    # via
+    #   azure-monitor-opentelemetry
+opentelemetry-instrumentation-wsgi==0.66b2
     # via
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
 opentelemetry-resource-detector-azure==0.3.0
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-sdk==1.45.1
+opentelemetry-sdk==1.45.2
     # via
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
     #   opentelemetry-resource-detector-azure
-opentelemetry-semantic-conventions==0.66b1
+opentelemetry-semantic-conventions==0.66b2
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-asgi
@@ -679,7 +681,7 @@ opentelemetry-semantic-conventions==0.66b1
     #   opentelemetry-instrumentation-urllib3
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-sdk
-opentelemetry-util-http==0.66b1
+opentelemetry-util-http==0.66b2
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-django
