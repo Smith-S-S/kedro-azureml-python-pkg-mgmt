@@ -349,7 +349,7 @@ ruamel-yaml==0.18.6
     # YAML parser/emitter that supports comments and round-trip
 ruamel-yaml-clib==0.2.12
     # C version of reader/scanner for ruamel.yaml
-soupsieve==4.0.1
+soupsieve==2.9.2
     # CSS selector implementation used by BeautifulSoup
 sqlalchemy==2.0.44
     # SQL Toolkit and Object Relational Mapper (ORM)
