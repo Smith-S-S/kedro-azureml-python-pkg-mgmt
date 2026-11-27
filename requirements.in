@@ -608,3 +608,5 @@ rfc3987-syntax==1.1.0
     # Validation and parsing of RFC 3987 IRIs and URIs
 six==1.17.0
     # Python 2 and 3 compatibility library
+opentelemetry-instrumentation-logging==0.66b2
+opentelemetry-instrumentation-httpx==0.66b2
